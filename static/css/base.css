@@ -40,6 +40,10 @@ body {
     color: #8a8987;
 }
 
+.nav-color:hover {
+    color: #bbbbbb;
+}
+
 .bg-top {
     background-color: #1a1b1b;
 }
@@ -49,7 +53,9 @@ body {
     background-color: rgb(26, 27, 27);
 }
 
-.btn-color 
+.btn-color .border {
+    border-color: rgb(43, 46, 47) !important;
+}
 
 .border-q {
     border-color: rgb(43, 46, 47) !important;
@@ -58,6 +64,7 @@ body {
 .dropdown-menu {
     background-color: #1a1b1b;
 }
+
 
 .dropdown-item {
     background-color: #1a1b1b;
@@ -74,13 +81,50 @@ body {
     color: white;
 }
 
+/* CARDS */
+.card {
+    background-color: #212323;
+}
+
+.card-footer {
+    background-color: #212323;
+}
+
+.zoom {
+    transition: transform .2s;
+    /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
+
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: -5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+}
+
+
+/* SHADOW */
+.shadow-img {
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 25px 50px -20px;
+}
 
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-    max-width: 80%;
+        max-width: 80%;
     }
 }
 
@@ -96,5 +140,16 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }

@@ -8,6 +8,7 @@ class RecordAdmin(admin.ModelAdmin):
         'sku',
         'name',
         'category',
+        'release_date',
         'price',
         'rating',
         'image',
