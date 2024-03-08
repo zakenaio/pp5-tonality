@@ -3,11 +3,12 @@ html {
 }
 
 body {
-    background: url('/media/hero.png') no-repeat center center fixed;
-    background-size: cover;
+    /* background: url('/media/x0h7bKs-1018369745.jpg') no-repeat center center fixed;
+    background-size: cover; */
     height: calc(100vh - 164px);
-    color: #555;
     font-family: 'Lato';
+    background-color: #212323;
+    color: #8a8987;
 }
 
 /* from Bulma */
@@ -33,9 +34,34 @@ body {
     min-width: 260px;
 }
 
-.btn-black {
-    background: black;
-    color: white;
+
+/* COLORS */
+.nav-color {
+    color: #8a8987;
+}
+
+.bg-top {
+    background-color: #1a1b1b;
+}
+
+.form-control {
+    color: rgb(110, 107, 102);
+    background-color: rgb(26, 27, 27);
+}
+
+.btn-color 
+
+.border-q {
+    border-color: rgb(43, 46, 47) !important;
+}
+
+.dropdown-menu {
+    background-color: #1a1b1b;
+}
+
+.dropdown-item {
+    background-color: #1a1b1b;
+    color: rgb(110, 107, 102)
 }
 
 .shop-now-button:hover,
@@ -44,17 +70,10 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #575757;
     color: white;
 }
 
-.text-black {
-    color: #000 !important;
-}
-
-.border-black {
-    border: 1px solid black !important;
-}
 
 /* -------------------------------- Media Queries */
 
