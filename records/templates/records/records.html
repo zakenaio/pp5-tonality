@@ -37,7 +37,7 @@
                                     {% endif %}
 
                                     {% if record.is_new_release %}
-                                    <div class="top-right p-2">NEW</div>
+                                    <div class="top-right p-2"><strong>NEW</strong> <i class="fa-solid fa-fire"></i></div>
                                     {% endif %}
                             
                                 <div class="card-body pb-0">
@@ -52,8 +52,12 @@
                                             {% else %}
                                                 <small class="text-muted">No Rating </small>
                                             {% endif %}
-                                            <small class="text-muted"><i class="fa-solid fa-folder-open"></i> {{ record.category.friendly_name }}</small>
-                                        </div>
+                                            <small class="text-muted">
+                                                <i class="fa-solid fa-folder-open"></i> 
+                                                {% for category in record.category.all %}
+                                                    {{ category.get_friendly_name }}{% if not forloop.last %}, {% endif %}
+                                                {% endfor %}
+                                            </small>                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -52,7 +52,7 @@
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <form method="GET" action="">
+                <form method="GET" action="{%  url 'records' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-q rounded-1" type="text" name="q"
                             placeholder="Find your jam...">
@@ -132,7 +132,28 @@
     {% block postloadjs %}
     {% endblock %}
 
-
+<footer class="footer">
+    <div class="container-fluid pt-5">
+        <div class="row p-4">
+            <div class="col-10 col-md-4 mb-5">
+                <h3 class="logo-font">The story so far.</h3>
+                <h5> TONALiTY was born out of the desire to get the best records out there.</h5>
+                <p> We are a small team of music lovers who want to share our passion with the world.</p>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-md-7 col-12 mb-5">
+                <h3 class="logo-font">Sign up for our newsletter</h3>
+                <form class="input-group " method="POST" action="">
+                    {% csrf_token %}
+                    <input type="email" name="email" class="form-control btn btn-black border border-q rounded-0" placeholder="Your email">
+                    <div class="input-group-append border border-q rounded-1">
+                        <button type="submit" class="btn btn-color">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
