@@ -88,6 +88,12 @@ body > footer {
     background-color: rgb(26, 27, 27);
 }
 
+.btt-link,
+.update-link
+.remove-item {
+    cursor: pointer;
+}
+
 .table {
     color: #8a8987;
 }
