@@ -3,12 +3,15 @@ html {
 }
 
 body {
-    /* background: url('/media/x0h7bKs-1018369745.jpg') no-repeat center center fixed;
-    background-size: cover; */
     height: calc(100vh - 164px);
     font-family: 'Lato';
     background-color: #212323;
     color: #8a8987;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
 }
 
 /* from Bulma */
@@ -78,6 +81,11 @@ body {
 .btn-black:focus {
     background: #575757;
     color: white;
+}
+
+.btn-outline-grey {
+    color: white !important;
+    background-color: rgb(26, 27, 27);
 }
 
 /* CARDS */
