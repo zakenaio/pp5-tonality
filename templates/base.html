@@ -26,9 +26,8 @@
 
     {% block corejs %}
     <script src="https://kit.fontawesome.com/38e71f908d.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -132,32 +131,33 @@
     {% block postloadjs %}
     {% endblock %}
 
-<footer class="footer">
-    <div class="container-fluid pt-5">
-        <div class="row p-4">
-            <div class="col-10 col-md-4 mb-5">
-                <h3 class="logo-font">The story so far.</h3>
-                <h5> TONALiTY was born out of the desire to get the best records out there.</h5>
-                <p> We are a small team of music lovers who want to share our passion with the world.</p>
-            </div>
-            <div class="col-1"></div>
-            <div class="col-md-7 col-12 mb-5">
-                <h3 class="logo-font">Sign up for our newsletter</h3>
+    <footer class="footer">
+        <div class="container-fluid pt-5">
+            <div class="row p-4">
+                <div class="col-10 col-md-4 mb-5">
+                    <h3 class="logo-font">The story so far.</h3>
+                    <h5> TONALiTY was born out of the desire to get the best records out there.</h5>
+                    <p> We are a small team of music lovers who want to share our passion with the world.</p>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-md-7 col-12 mb-5">
+                    <h3 class="logo-font">Sign up for our newsletter</h3>
                     <div class="input-group w-80">
                         <form class="input-group " method="POST" action="">
                             {% csrf_token %}
-                            <input class="form-control border border-q rounded-2" type="text" name="q" placeholder="Enter your email.">
+                            <input class="form-control border border-q rounded-2" type="text" name="q"
+                                placeholder="Enter your email.">
                             <div class="input-group-append">
                                 <button class="form-control btn nav-color border border-q rounded-2" type="submit">
-                                    Subscribe 
+                                    Subscribe
                                 </button>
                             </div>
                         </form>
                     </div>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 
 </html>
