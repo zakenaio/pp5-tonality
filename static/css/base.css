@@ -61,7 +61,7 @@ body > footer {
 }
 
 .border-q {
-    border-color: rgb(43, 46, 47) !important;
+    border-color: rgb(59, 59, 59) !important;
 }
 
 .dropdown-menu {
@@ -71,6 +71,11 @@ body > footer {
 .dropdown-item {
     background-color: #1a1b1b;
     color: rgb(110, 107, 102)
+}
+
+.btn-black {
+    background: #363636;
+    color: white;
 }
 
 .shop-now-button:hover,
@@ -88,14 +93,118 @@ body > footer {
     background-color: rgb(26, 27, 27);
 }
 
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
 .btt-link,
-.update-link
+.update-link,
 .remove-item {
     cursor: pointer;
 }
 
 .table {
     color: #8a8987;
+}
+
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.toast {
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.toast-header {
+    background-color: #212323;
+    color: #bbbbbb;
+}
+
+.toast-body {
+    background-color: rgb(26, 27, 27);
+    color: #bbbbbb;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 4px;
+}
+
+.close {
+    color: #f8f8f8;
+    text-shadow: none;
+}
+
+.close:hover {
+    color: #d2d2d2;
+}
+
+/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 36px;
+}
+
+/* Convenience classes - colors copied from Bootstrap */
+.arrow-primary {
+    border-bottom-color: #007bff !important;
+}
+
+.arrow-secondary {
+    border-bottom-color: #6c757d !important;
+}
+
+.arrow-success {
+    border-bottom-color: #28a745 !important;
+}
+
+.arrow-danger {
+    border-bottom-color: #dc3545 !important;
+}
+
+.arrow-warning {
+    border-bottom-color: #ffc107 !important;
+}
+
+.arrow-info {
+    border-bottom-color: #17a2b8 !important;
+}
+
+.arrow-light {
+    border-bottom-color: #f8f9fa !important;
+}
+
+.arrow-dark {
+    border-bottom-color: #343a40 !important;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* CARDS */
