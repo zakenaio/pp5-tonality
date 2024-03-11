@@ -88,6 +88,10 @@ body > footer {
     background-color: rgb(26, 27, 27);
 }
 
+.table {
+    color: #8a8987;
+}
+
 /* CARDS */
 .card {
     background-color: #212323;

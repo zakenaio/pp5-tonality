@@ -1,11 +1,35 @@
 from django.shortcuts import render, redirect
-
-# Create your views here.
+from records.models import Records  # Adjusted import for Record model from another app
 
 def view_bag(request):
     """ A view that renders the bag contents page """
+    bag = request.session.get('bag', {})
+    bag_items = []
+    total = 0
+    product_count = 0
 
-    return render(request, 'bag/bag.html')
+    for item_id, quantity in bag.items():
+        try:
+            record = Records.objects.get(id=item_id)  # Fetching the Record based on item_id
+            total += quantity * record.price
+            product_count += quantity
+            bag_items.append({
+                'item_id': item_id,
+                'quantity': quantity,
+                'record': record,
+            })
+        except Records.DoesNotExist:
+            # Handle the case where the record does not exist
+            pass
+
+    context = {
+        'bag_items': bag_items,
+        'total': total,
+        'product_count': product_count,
+    }
+
+    return render(request, 'bag/bag.html', context)
+
 
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
@@ -22,4 +46,3 @@ def add_to_bag(request, item_id):
     request.session['bag'] = bag
     print(request.session['bag'])
     return redirect(redirect_url)
-    
