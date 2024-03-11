@@ -1,43 +1,58 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Records
-
+from .models import Records, Category
+from django.db.models.functions import Lower
 
 def all_records(request):
     """View for all records"""
 
     records = Records.objects.all()
-    query = ''
-    category = request.GET.get('category', '')
+    query = None
+    sort = None
+    direction = None
+
+    # Fetch all categories to display on the page, regardless of filtering
+    all_categories = Category.objects.all()
 
     if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                records = records.annotate(lower_name=Lower('name'))
+            if sortkey == 'category':
+                sortkey = 'category__name'
+            if sortkey == 'release':
+                sortkey = 'releasedate'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            records = records.order_by(sortkey)
+            
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            records = records.filter(category__name__in=categories)
+
         if 'q' in request.GET:
-            query = request.GET['q'].strip()
-            if not query and not category:
+            query = request.GET['q'].strip().lower()  # Normalize the query for case-insensitive search
+            if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('records'))
             
-            if query:
-                if query == 'is_new_release,deals':
-                    records = records.filter(Q(is_new_release=True) | Q(is_deal=True))
-                elif query == 'is_new_release':
-                    records = records.filter(is_new_release=True)
-                elif query == 'deals':
-                    records = records.filter(is_deal=True)
-                else:
-                    queries = (
-                        Q(name__icontains=query) |
-                        Q(description__icontains=query) |
-                        Q(category__name__icontains=query)
-                    )
-                    records = records.filter(queries).distinct()
-        elif category:
-            records = records.filter(category__name__icontains=category).distinct()
+            # Generalized search logic that looks for the query in various fields
+            queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(category__name__icontains=query)
+            records = records.filter(queries)
+
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'records': records,
-        'search_term': query or category,
+        'search_term': query,
+        'all_categories': all_categories,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'records/records.html', context)

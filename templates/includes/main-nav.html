@@ -5,9 +5,9 @@
                 All Records
             </a>
             <div class="dropdown-menu border-0 shadow-img" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'records' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'records' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'records' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'records' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -29,10 +29,10 @@
                 Techno
             </a>
             <div class="dropdown-menu border-0 shadow-img" aria-labelledby="techno-link">
-                <a href="{% url 'records' %}?category=industrial" class="dropdown-item">Industrial</a>
-                <a href="{% url 'records' %}?category=melodic" class="dropdown-item">Melodic</a>
-                <a href="{% url 'records' %}?category=ambient" class="dropdown-item">Ambient</a>
-                <a href="{% url 'records' %}?category=techno" class="dropdown-item">All Techno</a>
+                <a href="{% url 'records' %}?category=Industrial" class="dropdown-item">Industrial</a>
+                <a href="{% url 'records' %}?category=Melodic" class="dropdown-item">Melodic</a>
+                <a href="{% url 'records' %}?category=Ambient" class="dropdown-item">Ambient</a>
+                <a href="{% url 'records' %}?category=Techno" class="dropdown-item">All Techno</a>
             </div>
         </li>
 
@@ -42,8 +42,9 @@
             </a>
             <div class="dropdown-menu border-0 shadow-img" aria-labelledby="specials-link">
                 <a href="{% url 'records' %}?q=is_new_release" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'records' %}?q=deals" class="dropdown-item">Deals</a>
-                <a href="{% url 'records' %}?q=is_new_release,deals" class="dropdown-item">All Specials</a>
+                <a href="{% url 'records' %}?q=Deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'records' %}?category=Classic" class="dropdown-item">Classics</a>
+                <a href="{% url 'records' %}?q=is_new_release,Deals,Classic" class="dropdown-item">All Specials</a>
             </div>
         </li>
 
@@ -52,9 +53,9 @@
                 About
             </a>
             <div class="dropdown-menu border-0 shadow-img" aria-labelledby="about-link">
-                <a href="" class="dropdown-item">About us</a>
-                <a href="" class="dropdown-item">FAQ</a>
-                <a href="" class="dropdown-item">Contact</a>
+                <a href="{% url 'about' %}" class="dropdown-item">About us</a>
+                <a href="#faq" class="dropdown-item">FAQ</a>
+                <a href="#contact" class="dropdown-item">Contact</a>
             </div>
         </li>
     </ul>
