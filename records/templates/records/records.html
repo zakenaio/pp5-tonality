@@ -39,14 +39,18 @@
                                 (low to high)</option>
                             <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>
                                 Rating (high to low)</option>
-                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)
-                            </option>
-                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
-                                (Z-A)</option>
+                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>
+                                Name (A-Z) </option>
+                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>
+                                Name (Z-A)</option>
                             <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
                                 Category (A-Z)</option>
                             <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>
                                 Category (Z-A)</option>
+                            <option value="releasedate_asc" {% if current_sorting == 'releasedate_asc' %}selected{% endif %}>
+                                Release Date (oldest first)</option>
+                            <option value="releasedate_desc" {% if current_sorting == 'releasedate_desc' %}selected{% endif %}>
+                                Release Date (newest first)</option>
                         </select>
                     </div>
                 </div>
@@ -63,7 +67,7 @@
             </div>
             <div class="row">
                 {% for record in records %}
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 my-3">
 
                     <div class="card h-100 zoom">
                         {% if record.image %}
@@ -86,8 +90,23 @@
                         <div class="top-deal p-2"><strong>DEAL</strong> <i class="fa-solid fa-bolt-lightning"></i></div>
                         {% endif %}
 
-                        <div class="card-body pb-0">
-                            <p class="text-muted small text-right">{{ record.releasedate }} </p>
+                        <div class="row pt-4 pb-0">
+                            <div class="col-6">
+                                <!-- CRUD FOR SU -->
+                                {% if request.user.is_superuser %}
+                                <small class="pl-3">
+                                    <a href="{% url 'edit_record' record.id %}">Edit</a> |
+                                    <a class="text-danger" href="{% url 'delete_record' record.id %}">Delete</a>
+                                </small>
+                                {% endif %}
+                            </div>
+                            <div class="col-6">
+                                <p class="text-right pr-3">
+                                    {{ record.releasedate }} 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-body pt-0">
                             <p class="mb-2">{{ record.name }}</p>
                         </div>
                         <div class="card-footer pt-0 border-0 text-left">
@@ -107,15 +126,6 @@
                                         {% endfor %}
                                     </small>
 
-                                    <!-- CRUD FOR SU -->
-                                    <p class="mb-0">
-                                        {% if request.user.is_superuser %}
-                                        <small class="ml-3">
-                                            <a href="{% url 'edit_record' record.id %}">Edit</a> |
-                                            <a class="text-danger" href="{% url 'delete_record' record.id %}">Delete</a>
-                                        </small>
-                                        {% endif %}
-                                    </p>
                                 </div>
                             </div>
                         </div>
