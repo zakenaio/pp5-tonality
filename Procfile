@@ -1,0 +1,1 @@
+web: gunicorn tonality.wsgi:application
