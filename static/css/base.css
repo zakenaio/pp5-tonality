@@ -253,7 +253,6 @@ a.category-badge > span.badge:hover {
 
 .zoom {
     transition: transform .2s;
-    z-index: 9999;
     /* Animation */
 }
 
