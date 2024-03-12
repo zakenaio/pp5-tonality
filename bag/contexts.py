@@ -7,17 +7,17 @@ def bag_contents(request):
 
     bag_items = []
     total = 0
-    product_count = 0
+    record_count = 0
     bag = request.session.get('bag', {})
 
     for item_id, quantity in bag.items():
         record = get_object_or_404(Records, pk=item_id)
         total += quantity * record.price
-        product_count += quantity
+        record_count += quantity
         bag_items.append({
             'item_id': item_id,
             'quantity': quantity,
-            'product': record,
+            'record': record,
         })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
@@ -32,7 +32,7 @@ def bag_contents(request):
     context = {
         'bag_items': bag_items,
         'total': total,
-        'product_count': product_count,
+        'record_count': record_count,
         'delivery': delivery,
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,

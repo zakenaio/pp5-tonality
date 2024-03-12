@@ -8,13 +8,13 @@ def view_bag(request):
     bag = request.session.get('bag', {})
     bag_items = []
     total = 0
-    product_count = 0
+    record_count = 0
 
     for item_id, quantity in bag.items():
         try:
             record = Records.objects.get(id=item_id)  # Fetching the Record based on item_id
             total += quantity * record.price
-            product_count += quantity
+            record_count += quantity
             bag_items.append({
                 'item_id': item_id,
                 'quantity': quantity,
@@ -27,14 +27,14 @@ def view_bag(request):
     context = {
         'bag_items': bag_items,
         'total': total,
-        'product_count': product_count,
+        'record_count': record_count,
     }
 
     return render(request, 'bag/bag.html', context)
 
 
 def add_to_bag(request, item_id):
-    """ Add a quantity of the specified product to the shopping bag """
+    """ Add a quantity of the specified record to the shopping bag """
 
     record = Records.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -53,13 +53,13 @@ def add_to_bag(request, item_id):
 
 
 def adjust_bag(request, item_id):
-    """Adjust the quantity of the specified product to the specified amount"""
+    """Adjust the quantity of the specified record to the specified amount"""
 
     record = get_object_or_404(Records, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     size = None
-    if 'product_size' in request.POST:
-        size = request.POST['product_size']
+    if 'record_size' in request.POST:
+        size = request.POST['record_size']
     bag = request.session.get('bag', {})
 
     if size:
@@ -87,8 +87,8 @@ def remove_from_bag(request, item_id):
     try:
         record = get_object_or_404(Records, pk=item_id)
         size = None
-        if 'product_size' in request.POST:
-            size = request.POST['product_size']
+        if 'record_size' in request.POST:
+            size = request.POST['record_size']
         bag = request.session.get('bag', {})
 
         if size:
