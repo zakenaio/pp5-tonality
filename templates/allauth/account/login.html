@@ -7,6 +7,14 @@
 
 {% block content %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
 <h1>{% trans "Sign In" %}</h1>
 
 {% get_providers as socialaccount_providers %}

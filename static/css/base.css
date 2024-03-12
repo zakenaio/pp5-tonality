@@ -38,7 +38,6 @@ body > footer {
     min-width: 260px;
 }
 
-
 /* COLORS */
 .nav-color {
     color: #8a8987;
@@ -155,6 +154,40 @@ a.category-badge > span.badge:hover {
 
 .close:hover {
     color: #d2d2d2;
+}
+
+/* Style all input fields and textareas within the form */
+.form input[type="text"],
+.form textarea,
+.form select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the fields */
+    margin: 8px 0; /* Margin between fields */
+    display: inline-block; /* Allows the width to take effect */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Box sizing to include padding in width */
+}
+
+/* Style the submit button */
+.form button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style the cancel button similarly or differently as needed */
+.form a.btn-outline-black {
+    /* Your styles here */
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
