@@ -36,12 +36,16 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified record to the shopping bag """
 
-    record = Records.objects.get(pk=item_id)
+    record = Records.objects.get(pk=item_id)  # Consider using get_object_or_404 here
     quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url')
+    redirect_url = request.POST.get('redirect_url', '/')  # Fallback to home if not provided
+
     bag = request.session.get('bag', {})
 
-    if item_id in list(bag.keys()):
+    if bag is None:  # Ensure bag is a dict
+        bag = {}
+
+    if item_id in bag:
         bag[item_id] += quantity
         messages.success(request, f'Updated {record.name} quantity to {bag[item_id]}')
     else:
@@ -49,7 +53,7 @@ def add_to_bag(request, item_id):
         messages.success(request, f'Added {record.name} to your bag')
 
     request.session['bag'] = bag
-    return redirect(redirect_url)
+    return redirect(request.META.get('HTTP_REFERER', '/'))
 
 
 def adjust_bag(request, item_id):
