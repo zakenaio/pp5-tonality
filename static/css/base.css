@@ -272,6 +272,15 @@ a.category-badge > span.badge:hover {
     }
 }
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 /* SPECIAL LABELS */
 .top-new {
     position: absolute;
