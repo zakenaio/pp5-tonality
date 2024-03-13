@@ -250,22 +250,15 @@ a.category-badge > span.badge:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Transition for both fade in and out */
 }
 
 .image-overlay-container:hover .overlay-buy-now-form {
     display: block; /* Show on hover */
     opacity: 1; /* Make fully visible */
-    animation: fadeIn 0.2s ease-in-out forwards; /* Smooth fade in */
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+/* No need for @keyframes fadeIn and fadeOut */
 
 /* SPECIAL LABELS */
 .top-new {
