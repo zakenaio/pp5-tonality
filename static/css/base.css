@@ -256,8 +256,8 @@ a.category-badge > span.badge:hover {
 
 .image-overlay-container:not(:hover) .overlay-buy-now-form {
     display: block;
-    animation: fadeOut 0.s3 ease-in-out forwards;
-    -webkit-animation: fadeOut 0.s3 ease-in-out forwards;
+    animation: fadeOut 0.3s ease-in-out forwards;
+    -webkit-animation: fadeOut 0.3s ease-in-out forwards;
 }
 
 .image-overlay-container:hover .overlay-buy-now-form {
