@@ -250,7 +250,14 @@ a.category-badge > span.badge:hover {
     -webkit-animation: fadeIn 0.5s ease-in-out forwards;
 }
 
+.image-overlay-container:not(:hover) .overlay-buy-now-form {
+    display: block; 
+    animation: fadeOut 0.5s ease-in-out forwards;
+    -webkit-animation: fadeOut 0.5s ease-in-out forwards;
+}
+
 .image-overlay-container:hover .overlay-buy-now-form {
+    opacity: 0; 
     display: block;
     animation: fadeIn 0.5s ease-in-out forwards;
     -webkit-animation: fadeIn 0.5s ease-in-out forwards;
