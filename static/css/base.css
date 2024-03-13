@@ -249,22 +249,13 @@ a.category-badge > span.badge:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
-    animation: fadeIn 0.5s ease-in-out forwards;
-    -webkit-animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-.image-overlay-container:not(:hover) .overlay-buy-now-form {
-    display: block;
-    animation: fadeOut 0.3s ease-in-out forwards;
-    -webkit-animation: fadeOut 0.3s ease-in-out forwards;
+    display: none; /* Initially hidden */
 }
 
 .image-overlay-container:hover .overlay-buy-now-form {
-    opacity: 0;
-    display: block;
-    animation: fadeIn 0.2s ease-in-out forwards;
-    -webkit-animation: fadeIn 0.2s ease-in-out forwards;
+    display: block; /* Show on hover */
+    opacity: 1; /* Make fully visible */
+    animation: fadeIn 0.2s ease-in-out forwards; /* Smooth fade in */
 }
 
 @keyframes fadeIn {
@@ -273,15 +264,6 @@ a.category-badge > span.badge:hover {
     }
     to {
         opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
     }
 }
 
