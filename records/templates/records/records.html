@@ -88,6 +88,7 @@
                                 <input type="submit" class="btn btn-outline-grey btn-outline-primary rounded-2 text-uppercase" value="Add to Bag">
                             </form>
                             
+                            <!-- New release and Deal labels, triggered by button i admin -->
                             {% if record.is_new_release %}
                             <div class="top-new p-2"><strong>NEW</strong> <i class="fa-solid fa-fire"></i></div>
                             {% endif %}
@@ -100,7 +101,7 @@
 
                         <div class="row pt-4 pb-0">
                             <div class="col-6">
-                                <!-- CRUD FOR SU -->
+                                <!-- crud for su -->
                                 {% if request.user.is_superuser %}
                                 <small class="pl-3">
                                     <a href="{% url 'edit_record' record.id %}">Edit</a> |
@@ -133,12 +134,10 @@
                                         <a class="nav-color" href="{% url 'records' %}?category={{ category.name }}">{{ category.get_friendly_name }}</a>{% if not forloop.last %}, {% endif %}
                                         {% endfor %}
                                     </small>
-
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
                 {% endfor %}
             </div>

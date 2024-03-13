@@ -9,8 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Explore our well picked collection of Techno and Psytrance vinyl records. From classic hits to the latest releases, find your perfect beat with us.">
-    <meta name="keywords" content="Techno Vinyl, Psytrance Vinyl, Classic Vinyl Records, Vinyl Store, Techno Music, Psytrance Music">
+    <meta name="description"
+        content="Explore our well picked collection of Techno and Psytrance vinyl records. From classic hits to the latest releases, find your perfect beat with us.">
+    <meta name="keywords"
+        content="Techno Vinyl, Psytrance Vinyl, Classic Vinyl Records, Vinyl Store, Techno Music, Psytrance Music">
     <meta name="robots" content="index, follow">
     <meta name="author" content="TONALITY">
     {% endblock %}
@@ -153,17 +155,21 @@
         <div class="container-fluid pt-5">
             <div class="row p-4">
                 <div class="col-10 col-md-4 mb-5">
-                    <h3 class="logo-font">The story so far.</h3>
-                    <h5> TONALiTY was born out of the desire to get the best records out there.</h5>
-                    <p> We are a small team of music lovers who want to share our passion with the world.</p>
+                    <h4> TONALiTY was born out of the desire to get the best records out there.</h4>
+                    <p>Dive into a sonic haven overflowing with rare techno & psytrance vinyl. Unearth forgotten
+                        classics, discover underground gems, and curate your collection with the guidance of our
+                        resident vinyl guru. Welcome to the trip.
+                    </p>
+                    <p class="small text-muted text-right">#raretechno #psytrance #vinylrecords #electronicmusic</p>
                 </div>
                 <div class="col-1"></div>
                 <div class="col-md-7 col-12 mb-5">
                     <h3 class="logo-font">Sign up for our newsletter</h3>
                     <div class="input-group w-80">
-                        <form class="input-group " method="POST" action="">
+
+                        <form class="input-group" method="POST" action="">
                             {% csrf_token %}
-                            <input class="form-control border border-q rounded-2" type="text" name="q"
+                            <input class="form-control border border-q rounded-2" type="email" name="email"
                                 placeholder="Enter your email.">
                             <div class="input-group-append">
                                 <button class="form-control btn nav-color border border-q rounded-2" type="submit">
@@ -171,6 +177,7 @@
                                 </button>
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>

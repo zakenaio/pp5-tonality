@@ -14,17 +14,25 @@
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <div class="product-details-container mb-5 mt-md-5">
-                <p class="lead font-weight-bold">Social Media</p>
-                <h2>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </h2>
+                <h2 class="lead font-weight-bold mb-4">Social Media</h2>
+
+                <p class="social-text">
+                Find us on social media, or just get in touch
+                via the contact form. <em>// Tonality</em>
+                </p>
+
+                <hr class="w-50 mb-1 border-q">
+
+                <p class="social-btns lead text-center">
+                    <a href="" label="Our page on facebook, opens in a new tab" target="_blank" rel="noopener"><i class="fa-brands fa-facebook nav-color m-3"></i></a>
+                    <a href="" label="Our page on youtube, opens in a new tab" target="_blank" rel="noopener"><i class="fa-brands fa-youtube nav-color m-3"></i></a>
+                    <a href="" label="Our page on instagram, opens in a new tab" target="_blank" rel="noopener"><i class="fa-brands fa-instagram nav-color m-3"></i></a>
+                </p>
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5">
-                <p class="lead font-weight-bold">Contact form</p>
+                <h2 class="lead font-weight-bold">Contact form</h2>
 
                 <form action="" method="post">
                     {% csrf_token %}
@@ -41,7 +49,7 @@
                     <div class="form-group">
                         <label for="message">Message:</label>
                         <textarea class="form-control border border-q rounded-1" id="message" name="message" rows="5"
-                            required></textarea>
+                            placeholder="Give us your thoughts." required></textarea>
                     </div>
                     <div class="text-right">
                     <button type="submit" class="btn btn-outline-primary border-q">Send</button>
