@@ -10,7 +10,6 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
@@ -22,7 +21,7 @@
         </div>
 
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 mb-5">
                 <form method="POST" action="{% url 'edit_record' record.id %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
@@ -33,8 +32,8 @@
                         {% endif %}
                     {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'records' %}">Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Update Record</button>
+                        <a class="btn btn-outline-warning border-q rounded-2" href="{% url 'records' %}">Cancel</a>
+                        <button class="btn btn-outline-success border-q rounded-2" type="submit">Update Record</button>
                     </div>
                 </form>
             </div>            

@@ -8,12 +8,11 @@ body {
     background-color: #212323;
     color: #8a8987;
 }
-/*
+
 body > footer {
     position: sticky;
     top: 100vh;
 }
-*/
 
 /* from Bulma */
 .icon {

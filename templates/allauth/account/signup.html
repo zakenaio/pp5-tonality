@@ -24,9 +24,11 @@
           {% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.
           {% endblocktrans %}
         </p>
+
+        SOME IMAGE HERE?! 
       </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-6"> 
+    <div class="col-12 col-md-6 col-lg-6 mb-5"> 
       <form action="{% url 'account_signup' %}" method="post">
         {% csrf_token %}
         <div class="form-group">
@@ -55,7 +57,7 @@
         <input type="hidden" name="next" value="{{next}}" />
         
         <div class="form-group">
-          <button type="submit" class="btn btn-outline-grey border-q rounded-2 text-uppercase float-right">Sign in</button>
+          <button type="submit" class="btn btn-outline-success border-q rounded-2 text-uppercase float-right">Sign in</button>
         </div>
         <hr>
         {% if form.errors %}
