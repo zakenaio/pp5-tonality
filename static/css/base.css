@@ -233,6 +233,23 @@ a.category-badge > span.badge:hover {
     -o-transform: scale(1.05);
 }
 
+/* BUY NOW */
+.image-overlay-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-buy-now-form {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.image-overlay-container:hover .overlay-buy-now-form {
+    display: block;
+}
 
 /* SPECIAL LABELS */
 .top-new {

@@ -71,24 +71,30 @@
 
                     <div class="card h-100 zoom">
                         {% if record.image %}
-                        <a href="{% url 'record_detail' record.id %}">
-                            <img class="card-img-top img-fluid shadow-img" src="{{ record.image.url }}"
-                                alt="{{ product.name }}">
-                        </a>
-                        {% else %}
-                        <a href="{% url 'record_detail' record.id %}">
-                            <img class="card-img-top img-fluid shadow-img" src="{{ MEDIA_URL }}noimage.png"
-                                alt="{{ product.name }}">
-                        </a>
-                        {% endif %}
+                        <div class="image-overlay-container">
+                            <a href="{% url 'record_detail' record.id %}">
+                                <img class="card-img-top img-fluid shadow-img" src="{{ record.image.url }}" alt="{{ record.name }}">
+                            </a>
+                            {% else %}
+                            <a href="{% url 'record_detail' record.id %}">
+                                <img class="card-img-top img-fluid shadow-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ record.name }}">
+                            </a>
+                            {% endif %}
+                            <form action="{% url 'add_to_bag' record.id %}" method="POST" class="overlay-buy-now-form">
+                                {% csrf_token %}
+                                <input type="hidden" name="quantity" value="1">
+                                <input type="submit" class="btn btn-outline-grey border-q rounded-2 text-uppercase buy-now-btn" value="Add to Bag">
+                            </form>
+                            
+                            {% if record.is_new_release %}
+                            <div class="top-new p-2"><strong>NEW</strong> <i class="fa-solid fa-fire"></i></div>
+                            {% endif %}
+    
+                            {% if record.is_deal %}
+                            <div class="top-deal p-2"><strong>DEAL</strong> <i class="fa-solid fa-bolt-lightning"></i></div>
+                            {% endif %}
 
-                        {% if record.is_new_release %}
-                        <div class="top-new p-2"><strong>NEW</strong> <i class="fa-solid fa-fire"></i></div>
-                        {% endif %}
-
-                        {% if record.is_deal %}
-                        <div class="top-deal p-2"><strong>DEAL</strong> <i class="fa-solid fa-bolt-lightning"></i></div>
-                        {% endif %}
+                        </div>
 
                         <div class="row pt-4 pb-0">
                             <div class="col-6">
