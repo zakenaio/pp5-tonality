@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'faq',
     'checkout',
     'profiles',
+    'contact',
 
     'crispy_forms',
     'widget_tweaks',
