@@ -1,6 +1,7 @@
 {% extends "account/base.html" %}
-
 {% load i18n %}
+{% load widget_tweaks %}
+
 
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
@@ -18,28 +19,50 @@
   <div class="row">
     <div class="col-12 col-md-6 col-lg-6 mx-auto text-center">
       <div class="product-details-container mb-5 mt-md-5">
-
         <p class="lead font-weight-bold">Sign Up</p>
-
-        <p class="small text-muted">{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
-
-        
+        <p class="small text-muted">
+          {% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.
+          {% endblocktrans %}
+        </p>
       </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-6">
-      <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+    <div class="col-12 col-md-6 col-lg-6"> 
+      <form action="{% url 'account_signup' %}" method="post">
+        {% csrf_token %}
         <div class="form-group">
-          {% csrf_token %}
-          <table class="w-100">
-            {{ form.as_table }}
-            {% if redirect_field_value %}
-            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-            {% endif %}
-          </table>
-          <button type="submit">{% trans "Sign Up" %} &raquo;</button>
+          {{ form.email|attr:"class:form-control"|attr:"placeholder:Email" }}
         </div>
-      </form>
+        <input type="hidden" name="next" value="{{next}}" />
 
+        <div class="form-group">
+          {{ form.email2|attr:"class:form-control"|attr:"placeholder:Email confirmation" }}
+        </div>
+        <input type="hidden" name="next" value="{{next}}" />
+
+        <div class="form-group">
+          {{ form.username|attr:"class:form-control"|attr:"placeholder:Username" }}
+        </div>
+        <input type="hidden" name="next" value="{{next}}" />
+
+        <div class="form-group">
+          {{ form.password1|attr:"class:form-control"|attr:"placeholder:Password" }}
+        </div>
+        <input type="hidden" name="next" value="{{next}}" />
+
+        <div class="form-group">
+          {{ form.password2|attr:"class:form-control"|attr:"placeholder:Password (again)" }}
+        </div>
+        <input type="hidden" name="next" value="{{next}}" />
+        
+        <div class="form-group">
+          <button type="submit" class="btn btn-outline-grey border-q rounded-2 text-uppercase float-right">Sign in</button>
+        </div>
+        <hr>
+        {% if form.errors %}
+        <font color="red">Username or Password does not Match. Please try again.</font>
+        <hr>
+        {% endif %}
+      </form>
     </div>
   </div>
 </div>

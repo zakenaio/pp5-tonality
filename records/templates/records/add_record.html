@@ -1,53 +1,176 @@
 {% extends "base.html" %}
 {% load static %}
+{% load widget_tweaks %}
 
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <hr>
-                <h2 class="logo-font mb-4">Records Management</h2>
-                <h5 class="text-muted">Add a record</h5>
-                <hr>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mx-auto">
+            <div class="product-details-container mb-5 mt-md-5">
+
+                <p class="lead font-weight-bold">Add a Record</p>
+
+                <div class="col-12 col-lg-6">
+
+                        
+                        <form method="POST" action="/records/add/" class="form w-100 mb-2" enctype="multipart/form-data">
+
+                            {% csrf_token %}
+                                <label for="id_category" class="control-label ">
+                                    Category
+                                </label>
+
+                                <div class="controls">
+                                    <div class="form-group">
+                                        {{ form.category|attr:"class:form-control"|attr:"class:selectmultiple"|attr:"name=category"|attr:"id=id_category" }}
+                                    </div>                                   
+                                </div>
+
+                                <label for="id_sku" class="control-label ">
+                                    Sku
+                                </label>
+                                <div class="form-group">
+                                    {{ form.sku|attr:"class:form-control"|attr:"placeholder:"|attr:"id=id_sku" }}
+                                </div>
+                                <input type="hidden" name="next" value="{{next}}" />
+
+                                <label for="id_name" class="control-label requiredField">
+                                    Name<span class="asteriskField">*</span>
+                                </label>
+                                <div class="form-group">
+                                    {{ form.name|attr:"class:form-control"|attr:"placeholder:"|attr:"id=id_name"|attr:"required" }}
+                                </div>
+                                <input type="hidden" name="next" value="{{next}}" />
+
+                                <label for="id_description" class="control-label requiredField">
+                                    Description<span class="asteriskField">*</span>
+                                </label>
+
+                                <div class="controls">
+                                    <div class="form-group">
+                                        {{ form.description|attr:"class:form-control"|attr:"cols:40"|attr:"rows=10"|attr:"id=id_description"|attr:"required" }}
+                                    </div>
+                                    <input type="hidden" name="next" value="{{next}}" />
+                                </div>
+
+                                <label for="id_releasedate" class="control-label ">
+                                    Releasedate
+                                </label>
+
+                                <div class="controls">
+                                    <div class="form-group">
+                                        {{ form.releasedate|attr:"class:form-control"|attr:"id=id_releasedate"|attr:"required" }}
+                                    </div>
+                                    <input type="hidden" name="next" value="{{next}}" />
+                                </div>
+
+
+                                <label for="id_price" class="control-label requiredField">
+                                    Price<span class="asteriskField">*</span>
+                                </label>
+
+                                <div class="controls">
+                                    <div class="form-group">
+                                        {{ form.price|attr:"class:form-control"|attr:"step=0.01"|attr:"type:number"|attr:"class=numberinput"|attr:"id=id_price"|attr:"required" }}
+                                    </div>
+                                    <input type="hidden" name="next" value="{{next}}" />
+                                </div>
+
+
+                                <label for="id_rating" class="control-label ">
+                                    Rating
+                                </label>
+
+                                <div class="controls">
+                                    <div class="form-group">
+                                        {{ form.rating|attr:"class:form-control"|attr:"step=0.01"|attr:"type:number"|attr:"class=numberinput"|attr:"id=id_rating" }}
+                                    </div>
+                                    <input type="hidden" name="next" value="{{next}}" />
+                                </div>
+
+                                <label for="id_image_url" class="control-label ">
+                                    Image url
+                                </label>
+
+                                <div class="controls">
+                                    <div class="form-group ">
+                                        {{ form.image_url|attr:"class:form-control"|attr:"maxlength=1024"|attr:"type:url"|attr:"name=image_url"|attr:"id=id_image_url"|attr:"urlinput" }}
+                                    </div>
+                                    <input type="hidden" name="next" value="{{next}}" />
+                                </div>
+
+                            </div>
+
+                            <label for="id_new-image" class="control-label ">
+                                Select Image
+                            </label>
+                            <input id="new-image" type="file" name="image" accept="image/*"
+                                    class="btn btn-outline-grey border-q rounded-2">
+                            <strong>
+                                <p class="text-danger" id="filename"></p>
+                            </strong>
+
+                            <div id="div_id_is_new_release" class="control-group">
+                                <div class="controls">
+                                    <label for="id_is_new_release" class="checkbox ">
+                                        <input type="checkbox" name="is_new_release"
+                                            class="border-black rounded-0 checkboxinput" id="id_is_new_release">
+                                        Is New Release
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="div_id_is_deal" class="control-group">
+                                <div class="controls">
+                                    <label for="id_is_deal" class="checkbox ">
+                                        <input type="checkbox" name="is_deal"
+                                            class="border-black rounded-0 checkboxinput" id="id_is_deal">
+                                        Is Deal
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="div_id_is_clearance" class="control-group">
+                                <div class="controls">
+                                    <label for="id_is_clearance" class="checkbox ">
+                                        <input type="checkbox" name="is_clearance"
+                                            class="border-black rounded-0 checkboxinput" id="id_is_clearance">
+                                        Is Clearance
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <a class="btn btn-outline-grey border-q rounded-2 " href="/records/">Cancel</a>
+                                <button class="btn btn-outline-grey border-q rounded-2 " type="submit">Add
+                                    record</button>
+                            </div>
+                        </form>
+
+                </div>
+
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'add_record' %}" class="form w-100 mb-2" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {% for field in form %}
-                        {% if field.name != 'image' %}
-                            {{ field | as_crispy_field }}
-                        {% else %}
-                            {{ field }}
-                        {% endif %}
-                    {% endfor %}
-                    <div class="text-right">
-                        <a class="btn btn-outline-grey border-q rounded-2 " href="{% url 'records' %}">Cancel</a>
-                        <button class="btn btn-outline-grey border-q rounded-2 " type="submit">Add record</button>
-                    </div>
-                </form>
-            </div>            
-        </div>
     </div>
+</div>
+
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-        $('#new-image').change(function() {
-            var file = $('#new-image')[0].files[0];
-            $('#filename').text(`Image will be set to: ${file.name}`);
-        });
-    </script>
+{{ block.super }}
+<script type="text/javascript">
+    $('#new-image').change(function () {
+        var file = $('#new-image')[0].files[0];
+        $('#filename').text(`Image will be set to: ${file.name}`);
+    });
+</script>
 {% endblock %}

@@ -1,29 +1,39 @@
 {% extends "account/base.html" %}
+{% load widget_tweaks %}
 
 {% load i18n %}
 
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-<h1>{% trans "Sign Out" %}</h1>
 
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+<div class="container-fluid" id="contact">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mx-auto text-center">
+            <div class="product-details-container mb-5 mt-md-5">
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
+                <p class="lead font-weight-bold">Sign Out</p>
 
+                <p>{% trans 'Are you sure you want to sign out?' %}</p>
+
+                <form method="post" action="{% url 'account_logout' %}">
+                    {% csrf_token %}
+                    {% if redirect_field_value %}
+                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                    {% endif %}
+                    <button type="submit" class="btn btn-outline-grey border-q rounded-2 text-uppercase mt-5">{% trans 'Sign Out' %}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'profiles',
 
     'crispy_forms',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -122,16 +123,16 @@ WSGI_APPLICATION = 'tonality.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-#}
-
 DATABASES = {
-    'default': dj_database_url.parse('postgres://dhczdntl:PwBP2x30cA-A68oskXZ7HO_TeUthJxkS@cornelius.db.elephantsql.com/dhczdntl')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
+
+#DATABASES = {
+#    'default': dj_database_url.parse('postgres://dhczdntl:PwBP2x30cA-A68oskXZ7HO_TeUthJxkS@cornelius.db.elephantsql.com/dhczdntl')
+#}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
