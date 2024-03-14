@@ -326,7 +326,7 @@ footer {
 
 /* form control */
 .form-control {
-    border: 1px solid rgb(59, 59, 59) !important;
+    border: rgb(59, 59, 59) !important;
     color: #ced4da !important;
 }
 
