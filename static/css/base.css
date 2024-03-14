@@ -325,7 +325,8 @@ footer {
 }
 
 /* form control */
-.form-control {
+.form-control,
+.custom-select {
     border-color: rgb(59, 59, 59) !important;
     color: #ced4da !important;
 }
