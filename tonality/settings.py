@@ -90,8 +90,12 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
+                # my apps
                 'bag.contexts.bag_contents',
                 'newsletter.content_processor.newsletter_context',
+                'faq.context_processors.faq_processor',
+                'contact.context_processors.contact_form',
+
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
