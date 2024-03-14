@@ -315,6 +315,13 @@ footer {
     margin-top: -100px; 
 }
 
+/* form control */
+.form-control {
+    border: 1px solid #ced4da;
+    color: #ced4da;
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
