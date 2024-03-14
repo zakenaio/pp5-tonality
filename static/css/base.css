@@ -304,6 +304,17 @@ footer {
     background-color: #1a1b1b;
 }
 
+/* FAQ and CONTACT */
+#faq {
+    padding-top: 100px; 
+    margin-top: -100px; 
+}
+
+#contact {
+    padding-top: 100px;
+    margin-top: -100px; 
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
