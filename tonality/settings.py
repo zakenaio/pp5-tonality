@@ -53,7 +53,9 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'contact',
+    'newsletter',
 
+    # magic
     'crispy_forms',
     'widget_tweaks',
 ]
@@ -88,8 +90,8 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
-                'faq.context_processors.newsletter_context',
                 'bag.contexts.bag_contents',
+                'newsletter.content_processor.newsletter_context',
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
@@ -120,6 +122,7 @@ LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'tonality.wsgi.application'
+
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

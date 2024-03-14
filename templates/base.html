@@ -40,6 +40,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/my8mn65tkmk1opfnp7az97l6mbf8oqp3tqct1zx3glyswgvg/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
@@ -171,10 +173,10 @@
                     <h3 class="">Sign up for our newsletter</h3>
                     <div class="input-group w-80">
 
-                        <form class="input-group" method="POST" action="">
+                        <form class="input-group" method="POST" action="{% url 'newsletter' %}">
                             {% csrf_token %}
                             <input class="form-control border border-q rounded-2" type="email" name="email"
-                                placeholder="Enter your email.">
+                                placeholder="Enter your email." id="newsletter_form">
                             <div class="input-group-append">
                                 <button class="form-control btn nav-color border border-q rounded-2" type="submit">
                                     Subscribe
@@ -184,9 +186,12 @@
                     </div>
 
                     <p class="social-btns lead text-center">
-                        <a href="" label="Our page on facebook, opens in a new tab" target="_blank" rel="noopener"><i class="fa-brands fa-facebook nav-color m-3"></i></a>
-                        <a href="" label="Our page on youtube, opens in a new tab" target="_blank" rel="noopener"><i class="fa-brands fa-youtube nav-color m-3"></i></a>
-                        <a href="" label="Our page on instagram, opens in a new tab" target="_blank" rel="noopener"><i class="fa-brands fa-instagram nav-color m-3"></i></a>
+                        <a href="" label="Our page on facebook, opens in a new tab" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-facebook nav-color m-3"></i></a>
+                        <a href="" label="Our page on youtube, opens in a new tab" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-youtube nav-color m-3"></i></a>
+                        <a href="" label="Our page on instagram, opens in a new tab" target="_blank" rel="noopener"><i
+                                class="fa-brands fa-instagram nav-color m-3"></i></a>
                     </p>
 
                 </div>
