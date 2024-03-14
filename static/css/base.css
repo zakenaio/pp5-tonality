@@ -159,10 +159,6 @@ a.category-badge > span.badge:hover {
     color: #d2d2d2;
 }
 
-.form-group {
-    min-width: 300px;
-}
-
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
@@ -330,7 +326,7 @@ footer {
 
 /* form control */
 .form-control {
-    border: 1px solid #ced4da !important;
+    border: 1px solid #8a8987 !important;
     color: #ced4da !important;
 }
 
