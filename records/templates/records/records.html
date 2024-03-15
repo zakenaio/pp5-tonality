@@ -28,7 +28,7 @@
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
                         <select id="sort-selector"
-                            class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            class="custom-select form-control custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
                             </option>
                             <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
@@ -87,14 +87,18 @@
                                 <input type="hidden" name="quantity" value="1">
                                 <input type="submit" class="btn btn-outline-grey btn-outline-primary rounded-2 text-uppercase" value="Add to Bag">
                             </form>
-                            
-                            <!-- New release and Deal labels, triggered by button i admin -->
+
+                            <!-- New release/ Deal and Clearance labels, triggered by button i admin -->
                             {% if record.is_new_release %}
                             <div class="top-new p-2"><strong>NEW</strong> <i class="fa-solid fa-fire"></i></div>
                             {% endif %}
-    
+
                             {% if record.is_deal %}
                             <div class="top-deal p-2"><strong>DEAL</strong> <i class="fa-solid fa-bolt-lightning"></i></div>
+                            {% endif %}
+
+                            {% if record.is_clearance %}
+                            <div class="top-clearance p-2"><strong>CLEARANCE</strong> <i class="fa-solid fa-bolt-lightning"></i></div>
                             {% endif %}
 
                         </div>

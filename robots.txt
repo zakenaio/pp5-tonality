@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://tonality-ecom-12775aa6fe17.herokuapp.com/sitemap.xml
