@@ -13,7 +13,7 @@
 
 {% block content %}
 
-<div class="container-fluid" id="contact">
+<div class="container" id="contact">
   <div class="row">
     <div class="col-12 col-md-6 col-lg-4 mx-auto text-center">
       <div class="product-details-container mb-5 mt-md-5">
@@ -23,7 +23,6 @@
         <p class="small text-muted">{% blocktrans %}If you have not created an account yet, then please
           <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
         </p>
-
 
         <form action="{% url 'account_login' %}" method="post">
           <div class="form-group">
@@ -35,9 +34,11 @@
           </div>
           {% csrf_token %}
           <div class="form-group">
-            <button type="submit" class="btn btn-outline-success border-q rounded-2 text-uppercase float-right">Sign in</button>
+            <button type="submit" class="btn btn-outline-success border-q rounded-2 text-uppercase float-right">Sign
+              in</button>
           </div>
-          <hr>
+
+          <!-- Error message if login failed -->
           {% if form.errors %}
           <font color="red">Username or Password does not Match. Please try again.</font>
           <hr>
@@ -45,6 +46,7 @@
         </form>
 
         <a href="{% url 'account_reset_password' %}" class="text-muted">Forgot Password?</a>
+      </div>
     </div>
   </div>
 </div>
