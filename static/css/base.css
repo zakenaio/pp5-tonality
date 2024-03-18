@@ -4,15 +4,13 @@ html {
 
 body {
     height: calc(100vh - 164px);
-    display: flex;
-    flex-direction: column;
     font-family: 'Lato';
     background-color: #212323;
     color: #8a8987;
 }
 
 footer {
-    margin-top: auto;
+    margin-bottom: 0;
 }
 
 /* from Bulma */
