@@ -9,10 +9,9 @@ body {
     color: #8a8987;
 }
 
-footer {
-    position: relative;
+body > footer {
+    position: sticky;
     bottom: 0;
-    width: 100%;
 }
 
 /* from Bulma */
@@ -97,7 +96,7 @@ em {
     background-color: rgb(26, 27, 27);
 }
 
-a.category-badge>span.badge:hover {
+a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
@@ -162,10 +161,10 @@ a.category-badge>span.badge:hover {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0;
-    height: 0;
+    width: 0; 
+    height: 0; 
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
+    border-right: 4px solid transparent; 
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -255,23 +254,13 @@ a.category-badge>span.badge:hover {
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-    }
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 
 /* SPECIAL LABELS */
@@ -326,13 +315,13 @@ footer {
 
 /* FAQ and CONTACT */
 #faq {
-    padding-top: 100px;
-    margin-top: -100px;
+    padding-top: 100px; 
+    margin-top: -100px; 
 }
 
 #contact {
     padding-top: 100px;
-    margin-top: -100px;
+    margin-top: -100px; 
 }
 
 /* form control */
