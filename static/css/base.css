@@ -1,8 +1,9 @@
-html {
+html, body {
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
+
 
 body {
     height: calc(100vh - 164px);
@@ -11,17 +12,16 @@ body {
     font-family: 'Lato';
     background-color: #212323;
     color: #8a8987;
-    margin: 0;
 }
 
 main {
-    flex: 1;
+    flex: 1 0 auto;
 }
 
 footer {
-    position: relative; 
-    bottom: 0;
+    flex-shrink: 0;
 }
+
 /* from Bulma */
 .icon {
     align-items: center;
