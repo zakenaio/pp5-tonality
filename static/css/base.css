@@ -9,7 +9,7 @@ body {
     color: #8a8987;
 }
 
-body > footer {
+footer {
     position: sticky;
     bottom: 0;
 }
