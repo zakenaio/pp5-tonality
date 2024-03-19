@@ -27,30 +27,20 @@
             <div class="row mt-1 mb-2">
                 <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper w-50">
+                        <label for="sort-selector" class="form-label">Sort Records</label>
                         <select id="sort-selector"
                             class="custom-select form-control custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
-                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
-                            </option>
-                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
-                                (low to high)</option>
-                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
-                                (high to low)</option>
-                            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating
-                                (low to high)</option>
-                            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>
-                                Rating (high to low)</option>
-                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>
-                                Name (A-Z) </option>
-                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>
-                                Name (Z-A)</option>
-                            <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
-                                Category (A-Z)</option>
-                            <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>
-                                Category (Z-A)</option>
-                            <option value="releasedate_asc" {% if current_sorting == 'releasedate_asc' %}selected{% endif %}>
-                                Release Date (oldest first)</option>
-                            <option value="releasedate_desc" {% if current_sorting == 'releasedate_desc' %}selected{% endif %}>
-                                Release Date (newest first)</option>
+                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                            <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
+                            <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
+                            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
+                            <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
+                            <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                            <option value="releasedate_asc" {% if current_sorting == 'releasedate_asc' %}selected{% endif %}>Release Date (oldest first)</option>
+                            <option value="releasedate_desc" {% if current_sorting == 'releasedate_desc' %}selected{% endif %}>Release Date (newest first)</option>
                         </select>
                     </div>
                 </div>
@@ -108,8 +98,8 @@
                                 <!-- crud for su -->
                                 {% if request.user.is_superuser %}
                                 <small class="pl-3">
-                                    <a href="{% url 'edit_record' record.id %}">Edit</a> |
-                                    <a class="text-danger" href="{% url 'delete_record' record.id %}">Delete</a>
+                                    <a href="{% url 'edit_record' record.id %}"><i class="fas fa-edit"></i> Edit</a> |
+                                    <a class="text-danger" href="{% url 'delete_record' record.id %}"><i class="fas fa-trash"></i> Delete</a>
                                 </small>
                                 {% endif %}
                             </div>
@@ -127,12 +117,12 @@
                                 <div class="col">
                                     <p class="lead mb-0 text-left font-weight-bold">${{ record.price }}</p>
                                     {% if record.rating %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ record.rating }} / 5
+                                    <small class="text-light"><i class="fas fa-star mr-1"></i>{{ record.rating }} / 5
                                     </small>
                                     {% else %}
-                                    <small class="text-muted">No Rating </small>
+                                    <small class="text-light">No Rating </small>
                                     {% endif %}
-                                    <small class="text-muted">
+                                    <small class="text-light">
                                         <i class="fa-solid fa-folder-open"></i>
                                         {% for category in record.category.all %}
                                         <a class="nav-color" href="{% url 'records' %}?category={{ category.name }}">{{ category.get_friendly_name }}</a>{% if not forloop.last %}, {% endif %}

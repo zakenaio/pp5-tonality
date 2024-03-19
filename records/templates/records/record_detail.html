@@ -30,11 +30,11 @@
                     <p class="mb-0">{{ record.name }}</p>
                     <p class="lead mb-0 text-left font-weight-bold">${{ record.price }}</p>
                     {% if record.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ record.rating }} / 5</small>
+                        <small class="text-light"><i class="fas fa-star mr-1"></i>{{ record.rating }} / 5</small>
                     {% else %}
-                        <small class="text-muted">No Rating</small>
+                        <small class="text-light">No Rating</small>
                     {% endif %}
-                    <small class="text-muted">
+                    <small class="text-light">
                         <i class="fa-solid fa-folder-open"></i> 
                         {% for category in record.category.all %}
                             <a class="nav-color" href="{% url 'records' %}?category={{ category.name }}">{{ category.get_friendly_name }}</a>{% if not forloop.last %}, {% endif %}
@@ -45,8 +45,8 @@
                     {% if request.user.is_superuser %}
                     <p class="mb-0">
                     <small class="ml-3">
-                        <a href="{% url 'edit_record' record.id %}">Edit</a> | 
-                        <a class="text-danger" href="{% url 'delete_record' record.id %}">Delete</a>
+                        <a href="{% url 'edit_record' record.id %}"><i class="fas fa-edit"></i> Edit</a> | 
+                        <a class="text-danger" href="{% url 'delete_record' record.id %}"><i class="fas fa-trash"></i> Delete</a>
                     </small>
                     </p>
                     {% endif %}
@@ -62,22 +62,18 @@
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <button class="decrement-qty btn btn-outline-grey border-q rounded-2" 
-                                                data-item_id="{{ record.id }}" id="decrement-qty_{{ record.id }}">
-                                                <span class="icon">
-                                                    <i class="fas fa-minus"></i>
-                                                </span>
+                                                data-item_id="{{ record.id }}" id="decrement-qty_{{ record.id }}" aria-label="decrement">
+                                                <i class="fas fa-minus"></i> 
                                             </button>
                                         </div>
                                         <input class="form-control qty_input border-q" type="number"
                                             name="quantity" value="1" min="1" max="99"
                                             data-item_id="{{ record.id }}"
-                                            id="id_qty_{{ record.id }}">
+                                            id="id_qty_{{ record.id }}" aria-label="quantity">
                                         <div class="input-group-append">
                                             <button class="increment-qty btn btn-outline-grey border-q rounded-2"
-                                                data-item_id="{{ record.id }}" id="increment-qty_{{ record.id }}">
-                                                <span class="icon">
+                                                data-item_id="{{ record.id }}" id="increment-qty_{{ record.id }}" aria-label="increment">
                                                     <i class="fas fa-plus"></i>
-                                                </span>
                                             </button>
                                         </div>
                                     </div>

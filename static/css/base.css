@@ -47,6 +47,15 @@ footer {
 }
 
 /* COLORS */
+
+a {
+    color: #17a2b8;
+}
+
+.text-danger {
+    color: #ff5e6b !important;
+}
+
 .nav-color {
     color: #8a8987;
 }
@@ -110,6 +119,14 @@ a.category-badge > span.badge:hover {
     color: #fff !important;
 }
 
+.text-light {
+    color: #dadada !important;
+}
+
+.btn-outline-primary {
+    color: #88c1ff;
+}
+
 .btt-button {
     height: 42px;
     width: 42px;
@@ -128,8 +145,7 @@ a.category-badge > span.badge:hover {
     color: #8a8987;
 }
 
-/* ------------------------------- bootstrap toasts */
-
+/* bootstrap toasts */
 .message-container {
     position: fixed;
     top: 72px;
@@ -278,8 +294,8 @@ a.category-badge > span.badge:hover {
     position: absolute;
     top: 8px;
     right: -5px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(83, 180, 88);
+    color: #000;
+    background-color: #28a745 ;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -291,8 +307,8 @@ a.category-badge > span.badge:hover {
     position: absolute;
     top: 8px;
     right: -5px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(83, 161, 180);
+    color: #000;
+    background-color: #17a2b8;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -304,8 +320,8 @@ a.category-badge > span.badge:hover {
     position: absolute;
     top: 8px;
     right: -5px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(207, 132, 51);
+    color: #000;
+    background-color: #ffc107;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -337,6 +353,11 @@ a.category-badge > span.badge:hover {
     color: #ffffff !important;
 }
 
+.form-control:focus,
+.custom-select:focus {
+    color: #212323 !important; 
+}
+
 /* 404 */
 
 .not-found i {
@@ -351,7 +372,7 @@ a.category-badge > span.badge:hover {
     height: 100vh;
 }
 
-/* -------------------------------- Media Queries */
+/* Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
