@@ -329,6 +329,10 @@ a.category-badge > span.badge:hover {
     -o-border-radius: 5px;
 }
 
+.social-btns {
+    font-size: 1.5em;
+}
+
 /* SHADOW - GLOW */
 .shadow-img {
     box-shadow: rgba(255, 255, 255, 0.25) 0px 25px 50px -20px;
