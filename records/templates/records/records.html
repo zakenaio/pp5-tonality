@@ -12,6 +12,7 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row">
+        <!-- Categories / Genres chooser -->
         <div class="col text-center">
             {% for c in all_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'records' %}?category={{ c.name }}">
@@ -21,7 +22,7 @@
             <hr class="w-50 mb-1 border-q">
         </div>
     </div>
-
+    <!-- Sorting -->
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2">
@@ -53,12 +54,10 @@
                             }}"</strong>{% endif %}
                     </p>
                 </div>
-
             </div>
             <div class="row">
                 {% for record in records %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 my-3">
-
                     <div class="card h-100 zoom">
                         {% if record.image %}
                         <div class="image-overlay-container">
@@ -70,32 +69,26 @@
                                 <img class="card-img-top img-fluid shadow-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ record.name }}">
                             </a>
                             {% endif %}
-                        
                             <!-- add to cart button on image -->
                             <form id="add-to-bag-form" method="POST" action="{% url 'add_to_bag' record.id %}" class="overlay-buy-now-form">
                                 {% csrf_token %}
                                 <input type="hidden" name="quantity" value="1">
                                 <input type="submit" class="btn btn-outline-grey btn-outline-primary rounded-2 text-uppercase" value="Add to Bag">
                             </form>
-
                             <!-- New release/ Deal and Clearance labels, triggered by button i admin -->
                             {% if record.is_new_release %}
                             <div class="top-new p-2"><strong>NEW</strong> <i class="fa-solid fa-fire"></i></div>
                             {% endif %}
-
                             {% if record.is_deal %}
                             <div class="top-deal p-2"><strong>DEAL</strong> <i class="fa-solid fa-bolt-lightning"></i></div>
                             {% endif %}
-
                             {% if record.is_clearance %}
                             <div class="top-clearance p-2"><strong>CLEARANCE</strong> <i class="fa-solid fa-bolt-lightning"></i></div>
                             {% endif %}
-
                         </div>
-
                         <div class="row pt-4 pb-0">
                             <div class="col-6">
-                                <!-- crud for su -->
+                                <!-- Crud for su -->
                                 {% if request.user.is_superuser %}
                                 <small class="pl-3">
                                     <a href="{% url 'edit_record' record.id %}"><i class="fas fa-edit"></i> Edit</a> |
@@ -110,24 +103,26 @@
                             </div>
                         </div>
                         <div class="card-body pt-0">
-                            <p class="mb-2">{{ record.name }}</p>
+                            <p class="mb-2 text-light">{{ record.name }}</p>
                         </div>
                         <div class="card-footer pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">
                                     <p class="lead mb-0 text-left font-weight-bold">${{ record.price }}</p>
+                                    <!-- Rating -->           
                                     {% if record.rating %}
                                     <small class="text-light"><i class="fas fa-star mr-1"></i>{{ record.rating }} / 5
                                     </small>
                                     {% else %}
                                     <small class="text-light">No Rating </small>
                                     {% endif %}
-                                    <small class="text-light">
-                                        <i class="fa-solid fa-folder-open"></i>
+                                    <!-- Categories / Generes -->
+                                    <p class="small text-light">
+                                        <i class="fa-solid fa-folder-open mr-1 mb-0"></i>
                                         {% for category in record.category.all %}
                                         <a class="nav-color" href="{% url 'records' %}?category={{ category.name }}">{{ category.get_friendly_name }}</a>{% if not forloop.last %}, {% endif %}
                                         {% endfor %}
-                                    </small>
+                                    </p>
                                 </div>
                             </div>
                         </div>
