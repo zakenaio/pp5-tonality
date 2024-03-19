@@ -36,13 +36,13 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified record to the shopping bag """
 
-    record = Records.objects.get(pk=item_id)  # Consider using get_object_or_404 here
+    record = Records.objects.get(pk=item_id) 
     quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url', '/')  # Fallback to home if not provided
+    redirect_url = request.POST.get('redirect_url', '/') 
 
     bag = request.session.get('bag', {})
 
-    if bag is None:  # Ensure bag is a dict
+    if bag is None:
         bag = {}
 
     if item_id in bag:
