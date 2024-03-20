@@ -139,7 +139,7 @@ WSGI_APPLICATION = 'tonality.wsgi.application'
 #}
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://dhczdntl:PwBP2x30cA-A68oskXZ7HO_TeUthJxkS@cornelius.db.elephantsql.com/dhczdntl')
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 # Password validation
