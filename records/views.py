@@ -7,6 +7,7 @@ from django.db.models.functions import Lower
 from .models import Records, Category
 from .forms import RecordForm
 
+
 def all_records(request):
     """View for all records"""
 
