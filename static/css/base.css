@@ -46,8 +46,11 @@ footer {
     min-width: 260px;
 }
 
-/* COLORS */
+.hero {
+    width: 100%;
+}
 
+/* COLORS */
 a {
     color: #17a2b8;
 }
@@ -288,6 +291,7 @@ a.category-badge > span.badge:hover {
     from { opacity: 1; }
     to { opacity: 0; }
 }
+
 
 /* SPECIAL LABELS */
 .top-new {
