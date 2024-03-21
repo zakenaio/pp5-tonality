@@ -29,17 +29,17 @@
       <form action="{% url 'account_signup' %}" method="post">
         {% csrf_token %}
         <div class="form-group">
-          {{ form.email|attr:"class:form-control"|attr:"placeholder:Email"|attr:"autofocus" }}
+          {{ form.username|attr:"class:form-control"|attr:"placeholder:Username" }}
+        </div>
+        <input type="hidden" name="next" value="{{next}}">
+
+        <div class="form-group">
+          {{ form.email|attr:"class:form-control"|attr:"placeholder:Email" }}
         </div>
         <input type="hidden" name="next" value="{{next}}">
 
         <div class="form-group">
           {{ form.email2|attr:"class:form-control"|attr:"placeholder:Email confirmation" }}
-        </div>
-        <input type="hidden" name="next" value="{{next}}">
-
-        <div class="form-group">
-          {{ form.username|attr:"class:form-control"|attr:"placeholder:Username" }}
         </div>
         <input type="hidden" name="next" value="{{next}}">
 
