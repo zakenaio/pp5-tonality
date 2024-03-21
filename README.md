@@ -33,46 +33,47 @@ WHY DID I MAKE IT THE WAY I DID.
 
 EXPLAIN COLORS
 background colors. 
-- `#212323` (Dark grayish color for body background) 
-- `#1a1b1b;` (Slightly darker background color for footer and dropdown menus)
+- `#212323` This dark grayish color is used for the body background, providing a subdued backdrop for the content. 
+- `#1a1b1b;` Slightly darker than the body background, this color is primarily used for the footer and dropdown menus, adding depth to these sections.
 
 Text colors
-- `#8a8987` (Grayish color for general text)
-- `#bbbbbb`  (Lighter grayish color for links, navigation, and certain text elements)
-- `#dadada` (Even lighter grayish color for specific text elements)
-- `#ffffff` (White color for form controls and certain text elements)
-- `#ff5e6b` (Reddish color for warnings, and creditcard withdraw amount)
+- `#8a8987`  A grayish tone utilized for general text throughout the site, ensuring readability against the dark background.
+- `#bbbbbb`  Lighter than the general text color, this shade is used for links, navigation elements, and certain text elements, offering subtle contrast.
+- `#dadada`  Even lighter than the link color, this grayish tone is applied to specific text elements, providing further differentiation.
+- `#ffffff` Used for form controls and certain text elements, this white color stands out against the dark background, enhancing visibility.
+- `#ff5e6b` A reddish tone employed for warnings and indicating withdrawal amounts for credit card transactions, alerting users to potential issues.
 
 Links 
-- `#17a2b8` (Cyan color for links, stands out against the dark background)
-- `#88c1ff` (Light blue color for primary outline buttons)
+- `#17a2b8` A cyan color chosen for links, ensuring they stand out against the dark background and inviting user interaction.
+- `#88c1ff` Light blue color used for primary outline buttons, providing a subtle yet noticeable accent to encourage action.
 
 Buttons
-- `#575757` (Slightly darker background color with white text on hover for shop now and specific buttons)
+- `#575757` When hovered over, buttons adopt this slightly darker background color with white text, enhancing interactivity and visual feedback.
 - `#ffc107 ` ((btn-outline-warning - Yellow from bootsrap)
 - `#007bff` (btn-outline-primary - Blue from bootstrap)
 - `#28a745` (btn-outline-success- Green from bootstap)
 
 Menu / nav
-- `#1a1b1b` (Dark background for dropdown menus)
-- `rgb(110, 107, 102)` (grayish text for dropdown items
+- `#1a1b1b` Dark background color employed for dropdown menus, ensuring contrast and visibility against the surrounding content.
+- `rgb(110, 107, 102)` Grayish text color used for dropdown items within menus, providing clear readability and navigation options, used as text color in form control. 
+- `rgb(26, 27, 27)` a darker grey for form control background. 
 
 Labels 
-- `#000` (Black color for special label texts)
-- `#28a745` (Greenish background for indicating new items)
-- `#17a2b8`  (Cyan background for indicating deals)
-- `#ffc107` (Yellowish background for indicating clearance items)
+- `#000`  Black color utilized for special label texts, drawing attention to specific information or categories.
+- `#28a745`  Greenish background color applied to indicate new items, attracting users' attention to recent additions.
+- `#17a2b8`  Cyan background color used to signify deals, prompting users to explore discounted items.
+- `#ffc107` Yellowish background color employed to highlight clearance items, encouraging users to take advantage of discounted products.
 
 Arrow - Top line and marker for messages top right, under bag/cart.
-- `#007bff` (Blue color for primary)
-- `#28a745` (Green color for Success, add to bag/change of bag)
-- `#dc3545` (Red color for Errors)
-- `#ffc107` (Yellow color for warnings)
-- `#17a2b8` (Cyan color for info)
+- `#007bff` Blue color denoting primary messages or actions, ensuring important notifications stand out.
+- `#28a745` Green color representing success, used for adding items to the bag or changing bag contents, providing positive feedback to users.
+- `#dc3545` Red color indicating errors or critical messages, alerting users to issues that require attention.
+- `#ffc107` Yellow color employed for warning messages, prompting users to proceed with caution.
+- `#17a2b8`  Cyan color associated with informational messages, providing users with additional context or details.
 
 I used [coolors.co](https://coolors.co/1a1a1a-202223-8b8986-188db8-81bcf6-247d3b-de4845) to generate my colour palette.
 
-![screenshot](documentation/coolors.png)
+![screenshot](documentation/colors1.png)
 
 ## Typography
 
@@ -420,6 +421,9 @@ Generated via DBeaver < LINK!
 ![erd](documentation/erd.png)
 
 ## Agile Development Process
+https://github.com/users/zakenaio/projects/3
+
+![Agile](documentation/agile.png)
 
 ### GitHub Projects
 
@@ -428,7 +432,6 @@ It isn't a specialized tool, but with the right tags and project creation/issue 
 
 Through it, user stories, issues, and tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
-![Agile](documentation/agile.png)
 ![Agile Roadmap](documentation/agile-plan.png)
 
 ### GitHub Issues
@@ -535,19 +538,7 @@ The live deployed application can be found deployed on [Heroku](https://tonality
 
 ### PostgreSQL Database
 
-This project uses a [Code Institute PostgreSQL Database](https://dbs.ci-dbs.net).
-
-To obtain my own Postgres Database from Code Institute, I followed these steps:
-
-- Signed-in to the CI LMS using my email address.
-- An email was sent to me with my new Postgres Database.
-
-> [!CAUTION]  
-> - PostgreSQL databases by Code Institute are only available to CI Students.
-> - You must acquire your own PostgreSQL database through some other method
-> if you plan to clone/fork this repository.
-> - Code Institute students are allowed a maximum of 8 databases.
-> - Databases are subject to deletion after 18 months.
+Elephant Will soon close! 
 
 ### Amazon AWS
 
@@ -871,26 +862,25 @@ Use this space to discuss any differences between the local version you've devel
 
 ## Credits
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+### Code Snippets and Tutorials:
+- [Zoom Card](https://www.w3schools.com/howto/howto_css_zoom_hover.asp)
+- [New Release Design](https://www.w3schools.com/howto/howto_css_image_text.asp)
+- [Shadow Effects](https://getcssscan.com/css-box-shadow-examples)
+- [Widget Tweaks Crispy](https://github.com/jazzband/django-widget-tweaks)
 
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
+### External Links:
+- [Comprehensive Guide to Grading Vinyl Records](https://thevinylfactory.com/features/a-comprehensive-guide-to-grading-vinyl-records/)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+### Images:
+#### images for about/faq section
+- Lot of 20 Random Vinyl Records Vintage Collection ![Image](https://www.picclickimg.com/D58AAOSwG4Nhnd8S/Lot-of-20-Random-Vinyl-Records-Vintage-Collection.webp)
+- Sound Waves Vector Illustration ![Image](https://png.pngtree.com/png-vector/20190811/ourlarge/pngtree-sound-waves-vector-illustration-png-image_1686908.jpg)
+
+#### Album covers 
+- are all sourced from Discorg. 
+- [Discorg](https://www.discogs.com/)
 
 ### Content
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-⚠️⚠️ EXAMPLE LINKS - REPLACE WITH YOUR OWN ⚠️⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | Source | Location | Notes |
 | --- | --- | --- |
@@ -901,17 +891,11 @@ Ideally, you should provide an actual link to every resource used, not just a ge
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 | [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+
 
 ### Acknowledgements
 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
+
