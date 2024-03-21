@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 
 class Contact(models.Model):
     """ Contact model asking for Name/Email/Message. """
