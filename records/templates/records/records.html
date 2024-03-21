@@ -70,7 +70,7 @@
                             </a>
                             {% endif %}
                             <!-- add to cart button on image -->
-                            <form id="add-to-bag-form" method="POST" action="{% url 'add_to_bag' record.id %}" class="overlay-buy-now-form">
+                            <form id="add-to-bag-form-{{ record.id }}" method="POST" action="{% url 'add_to_bag' record.id %}" class="overlay-buy-now-form">
                                 {% csrf_token %}
                                 <input type="hidden" name="quantity" value="1">
                                 <input type="submit" class="btn btn-outline-grey btn-outline-primary rounded-2 text-uppercase" value="Add to Bag">
