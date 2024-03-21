@@ -218,7 +218,7 @@ Gallery
 
     - Noticeable labels are applied to denote new releases, deals, and clearance items. These labels feature relatively bold colors, serving as eye-catching indicators for users navigating the site. This approach aims to draw attention to these specific categories, aiding users in quickly identifying and exploring items of interest. 
 
-![Labels](documentation/feat-labels.png)
+![Labels](documentation/feat-lables.png)
 
 
 ### Future Features
@@ -516,7 +516,7 @@ Using more popular providers with a wider user base, such as Facebook, typically
 I've created mockups of Facebook, Instagram and Youtube. 
 
 ![screenshot](documentation/FacebookMock.png)
-![screenshot](documentation/mockup-facebook.png)
+![screenshot](documentation/YouTubeMock.png)
 ![screenshot](documentation/InstagramMock.png)
 
 ### Newsletter Marketing
@@ -915,4 +915,3 @@ Ideally, you should provide an actual link to every resource used, not just a ge
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-
