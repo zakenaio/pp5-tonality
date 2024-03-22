@@ -5,15 +5,50 @@
 [![GitHub repo size](https://img.shields.io/github/repo-size/zakenaio/pp5-tonality)](https://github.com/zakenaio/pp5-tonality)
 ---
 
-SALES PITCH FOR SITE. 
-
-
 ![Mockup](documentation/mockup.png)
 
+I wanted to create an online store for something really close to me, Rare, classic Techno and Psytrance vinyl. 
+Here is why: 
+
+## Market Demand
+
+**Passionate Community:** Psytrance and Techno boast dedicated communities known for appreciating high-fidelity audio experiences. Vinyl offers a superior listening experience compared to digital formats, catering to this audiophile niche.
+
+**Growing Vinyl Market:** The vinyl record market's recent resurgence indicates a potential customer base interested in owning physical copies of their favorite music.
+
+**Limited Availability:** Rare and classic releases can be difficult to find in traditional record stores. Our webshop can become a go-to destination for collectors seeking hard-to-find gems.
+
+## Business Advantages
+
+**High Margins:** Rare and classic records can command premium prices compared to mass-produced new releases, allowing for potentially higher profit margins.
+
+**Recurring Revenue:** Vinyl collectors often build their collections over time, creating the potential for repeat customers.
+
+**Targeted Marketing:** By focusing on a specific genre and format, we can tailor our marketing efforts to reach a well-defined audience, making it more efficient than marketing a wider range of music products.
+
+**Low Overhead:** Compared to a brick-and-mortar store, our webshop has lower overhead costs such as rent and staff, allowing us to start our business with a smaller initial investment.
+
+## Additional Considerations
+
+**Building a Community:** Our webshop can become a hub for Psytrance and Techno enthusiasts. Consider creating a blog or forum to foster discussions and share our passion for the music. This can help build customer loyalty and brand recognition.
+
+**Curation and Expertise:** Careful selection of the records we offer can establish us as a trusted source for rare and classic releases. Our knowledge and passion for the music can differentiate us from competitors.
+
+**Collaborations:** Partnering with Psytrance and Techno labels or artists can give us access to exclusive releases and merchandise, further attracting collectors.
+
+Overall, creating a webshop for rare and classic Psytrance and Techno on vinyl can be a lucrative venture if we target the right audience and leverage the advantages of the online business model.
 
 ## UX
 
-WHY DID I MAKE IT THE WAY I DID. 
+In crafting our website's aesthetic, we aimed to encapsulate the essence of the music scene it represents: dark, gritty, and atmospheric. While Techno is often associated with a monotonous, gray mood, we saw an opportunity to inject vibrancy and energy into the design.
+
+Our mission was to make the album covers pop against the dark backdrop of the site, radiating vividness and vitality. By adding a subtle glow behind them, we enhanced their visual impact, turning them into captivating focal points that draw the eye.
+
+Essentially, we wanted our records to stand out as beacons of color and excitement amidst a sea of darkness. By infusing dashes of vibrant hues into the design, we aimed to create a dynamic and engaging visual experience that mirrors the energy of the music itself.
+
+And it's not just about Techno – we also paid homage to the shadowy allure of Psytrance. We balanced its dark undertones with bursts of psychedelic colors, capturing the genre's dynamic contrasts and enigmatic appeal.
+
+In short, our website isn't just a platform for browsing records – it's a captivating journey into the heart of the underground music scene, where every click is a step into a world of vibrant beats and electrifying melodies.
 
 ### Pros 
 - Reduced eye strain: Dark themes can be easier on the eyes, especially in low-light environments. This is because they reduce the amount of bright light that is emitted from the screen.
@@ -536,9 +571,18 @@ email address if they are interested in learning more.
 
 The live deployed application can be found deployed on [Heroku](https://tonality-ecom-12775aa6fe17.herokuapp.com).
 
-### PostgreSQL Database
+### ElephantSQL Database
 
-Elephant Will soon close! 
+This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
+
+To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
+
+- Click **Create New Instance** to start a new database.
+- Provide a name (this is commonly the name of the project: pp4-interesting2).
+- Select the **Tiny Turtle (Free)** plan.
+- You can leave the **Tags** blank.
+- Select the **Region** and **Data Center** closest to you.
+- Once created, click on the new database name, where you can view the database URL and Password.
 
 ### Amazon AWS
 
