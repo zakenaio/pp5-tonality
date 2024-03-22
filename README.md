@@ -476,11 +476,11 @@ Through it, user stories, issues, and tasks were planned, then tracked on a week
 
 - [Open Issues](https://github.com/zakenaio/pp5-tonality/issues) [![GitHub issues](https://img.shields.io/github/issues/zakenaio/pp5-tonality)](https://github.com/zakenaio/pp5-tonality/issues)
 
-    ![screenshot](documentation/gh-issues-open.png)
+    ![Open Issues](documentation/gh-issues-open.png)
 
 - [Closed Issues](https://github.com/zakenaio/pp5-tonality/issues?q=is%3Aissue+is%3Aclosed) [![GitHub closed issues](https://img.shields.io/github/issues-closed/zakenaio/pp5-tonality)](https://github.com/zakenaio/pp5-tonality/issues?q=is%3Aissue+is%3Aclosed)
 
-    ![screenshot](documentation/gh-issues-closed.png)
+    ![Closed issues](documentation/gh-issues-closed.png)
 
 ### MoSCoW Prioritization
 
@@ -515,8 +515,25 @@ I've identified some appropriate keywords to align with my site, that should hel
 when searching online to find my page easily from a search engine.
 This included a series of the following keyword types
 
-- Short-tail (head terms) keywords
-- Long-tail keywords
+#### Short-tail (head terms) keywords
+- Vinyl Records
+- Techno Music
+- Psytrance Music
+- Classic Records
+- Vinyl Store records
+- Vinyl records
+- Classic Techno
+#### Long-tail keywords
+- Best Techno Vinyl Records Collection
+- Latest Psytrance Vinyl Releases
+- Classic Vinyl Records for Sale
+- Explore Techno and Psytrance Vinyls
+- Buy Techno and Psytrance Vinyls Online
+- Techno and Psytrance Vinyl Store
+- Quality Techno and Psytrance Vinyl Records
+- Find Your Perfect Beat with Techno and Psytrance Vinyls
+- Authentic Techno and Psytrance Vinyl Albums
+- Techno and Psytrance Vinyl Records Shop
 
 I also played around with [Word Tracker](https://www.wordtracker.com) a bit
 to check the frequency of some of my site's primary keywords (only until the free trial expired).
