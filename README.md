@@ -66,7 +66,6 @@ In short, our website isn't just a platform for browsing records – it's a capt
 
 ## Colour Scheme
 
-EXPLAIN COLORS
 background colors. 
 - `#212323` This dark grayish color is used for the body background, providing a subdued backdrop for the content. 
 - `#1a1b1b;` Slightly darker than the body background, this color is primarily used for the footer and dropdown menus, adding depth to these sections.
