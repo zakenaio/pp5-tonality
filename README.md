@@ -259,8 +259,10 @@ Gallery
 
 ### Future Features
 
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#1
-    - Any additional notes about this feature.
+- BUY NOW
+    - Enhancing user experience, i want a "Purchase Now" button, seamlessly paired with the "Add to Bag" feature upon focus. This streamlined approach allows customers to swiftly add their desired record to their bag and proceed directly to checkout with minimal clicks. Simplifying the purchasing process not only enhances user convenience but also contributes to improved business efficiency and customer satisfaction.
+    
+
 - YOUR-TITLE-FOR-FUTURE-FEATURE-#2
     - Any additional notes about this feature.
 - YOUR-TITLE-FOR-FUTURE-FEATURE-#3
