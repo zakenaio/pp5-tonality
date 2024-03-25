@@ -3,6 +3,7 @@ from django.contrib import messages
 
 from records.models import Records
 
+
 def view_bag(request):
     """ A view that renders the bag contents page """
     bag = request.session.get('bag', {})
@@ -12,7 +13,7 @@ def view_bag(request):
 
     for item_id, quantity in bag.items():
         try:
-            record = Records.objects.get(id=item_id)  # Fetching the Record based on item_id
+            record = Records.objects.get(id=item_id)
             total += quantity * record.price
             record_count += quantity
             bag_items.append({
@@ -21,7 +22,6 @@ def view_bag(request):
                 'record': record,
             })
         except Records.DoesNotExist:
-            # Handle the case where the record does not exist
             pass
 
     context = {
@@ -36,9 +36,9 @@ def view_bag(request):
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified record to the shopping bag """
 
-    record = Records.objects.get(pk=item_id) 
+    record = Records.objects.get(pk=item_id)
     quantity = int(request.POST.get('quantity'))
-    redirect_url = request.POST.get('redirect_url', '/') 
+    redirect_url = request.POST.get('redirect_url', '/')
 
     bag = request.session.get('bag', {})
 
@@ -47,7 +47,9 @@ def add_to_bag(request, item_id):
 
     if item_id in bag:
         bag[item_id] += quantity
-        messages.success(request, f'Updated {record.name} quantity to {bag[item_id]}')
+        messages.success(
+            request, f'Updated {record.name} quantity to {bag[item_id]}'
+            )
     else:
         bag[item_id] = quantity
         messages.success(request, f'Added {record.name} to your bag')
@@ -65,7 +67,9 @@ def adjust_bag(request, item_id):
 
     if quantity > 0:
         bag[item_id] = quantity
-        messages.success(request, f'Updated {record.name} quantity to {bag[item_id]}')
+        messages.success(
+            request, f'Updated {record.name} quantity to {bag[item_id]}'
+            )
     else:
         bag.pop(item_id)
         messages.success(request, f'Removed {record.name} from your bag')
@@ -90,4 +94,3 @@ def remove_from_bag(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
-    
