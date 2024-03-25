@@ -106,7 +106,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | --- | --- | --- | --- | --- |
 | checkout | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/admin.py) | ![screenshot](documentation/testing/validation/pep8-checkout-admin.png) | |
 | checkout | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/forms.py) | ![screenshot](documentation/testing/validation/pep8-checkout-forms.png) | |
-| checkout | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/models.py) | ![screenshot](documentation/validation/pep8-checkout-models.png) | |
+| checkout | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/models.py) | ![screenshot](documentation/testing/validation/pep8-checkout-models.png) | |
 | checkout | signals.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/signals.py) | ![screenshot](documentation/testing/validation/pep8-checkout-signals.png) | |
 | checkout | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/urls.py) | ![screenshot](documentation/testing/validation/pep8-checkout-urls.png) | |
 | checkout | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/views.py) | ![screenshot](documentation/testing/validation/pep8-checkout-views.png) | |
@@ -126,7 +126,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | --- | --- | --- | --- | --- |
 | faq | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/faq/admin.py) | ![screenshot](documentation/testing/validation/pep8-faq-admin.png) | |
 | faq | context_processors.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/faq/context_processors.py) | ![screenshot](documentation/testing/validation/pep8-faq-context.png) | |
-| faq | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/faq/models.py) | ![screenshot](documentation/testing/validation/pep8-faq-modelspng) | |
+| faq | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/faq/models.py) | ![screenshot](documentation/testing/validation/pep8-faq-models.png) | |
 | faq | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/faq/urls.py) | ![screenshot](documentation/testing/validation/pep8-faq-urls.png) | |
 | faq | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/faq/views.py) | ![screenshot](documentation/testing/validation/pep8-faq-views.png) | |
 
