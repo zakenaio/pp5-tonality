@@ -262,8 +262,10 @@ Gallery
     - Enhancing user experience, i want a "Purchase Now" button, seamlessly paired with the "Add to Bag" feature upon focus. This streamlined approach allows customers to swiftly add their desired record to their bag and proceed directly to checkout with minimal clicks. Simplifying the purchasing process not only enhances user convenience but also contributes to improved business efficiency and customer satisfaction.
     
 
-- YOUR-TITLE-FOR-FUTURE-FEATURE-#2
-    - Any additional notes about this feature.
+- Comments on records.
+    - Introducing a comments section allows users to share opinions on tracks or records, fostering community engagement. It enriches the user experience, offering valuable insights for newcomers and providing a platform for loyal users to contribute to discussions, enhancing our platform's appeal and sense of community. Overall, the addition of a comments section fosters a sense of belonging and community within our platform, enhancing the overall user experience and solidifying our position as a hub for music lovers to discover, discuss, and appreciate their favorite tunes.
+
+
 - YOUR-TITLE-FOR-FUTURE-FEATURE-#3
     - Any additional notes about this feature.
 
