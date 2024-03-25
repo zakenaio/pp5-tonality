@@ -16,7 +16,6 @@ def all_records(request):
     sort = None
     direction = None
 
-    # Fetch all categories to display on the page, regardless of filtering
     all_categories = Category.objects.all()
 
     if request.GET:
@@ -35,18 +34,19 @@ def all_records(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             records = records.order_by(sortkey)
-            
+
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             records = records.filter(category__name__in=categories)
 
         if 'q' in request.GET:
-            query = request.GET['q'].strip().lower()  # Normalize the query for case-insensitive search
+            query = request.GET['q'].strip().lower()
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request, "You didn't enter any search criteria!"
+                    )
                 return redirect(reverse('records'))
-            
-            # Generalized search logic that looks for the query in various fields
+
             queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(category__name__icontains=query)
             records = records.filter(queries).distinct()
 
@@ -88,10 +88,13 @@ def add_record(request):
             messages.success(request, 'Successfully added record!')
             return redirect(reverse('record_detail', args=[record.id]))
         else:
-            messages.error(request, 'Failed to add record. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add record. Please ensure the form is valid.'
+                )
     else:
         form = RecordForm()
-        
+
     template = 'records/add_record.html'
     context = {
         'form': form,
@@ -115,7 +118,10 @@ def edit_record(request, record_id):
             messages.success(request, 'Successfully updated record!')
             return redirect(reverse('record_detail', args=[record.id]))
         else:
-            messages.error(request, 'Failed to update record. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to update record. Please ensure the form is valid.'
+                )
     else:
         form = RecordForm(instance=record)
         messages.info(request, f'You are editing {record.name}')

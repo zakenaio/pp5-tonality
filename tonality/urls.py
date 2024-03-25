@@ -31,7 +31,10 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
     path('newsletter/', include('newsletter.urls')),
-    path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
-    path('sitemap.xml', TemplateView.as_view(template_name="sitemap.xml", content_type='text/xml')),
+    path('robots.txt', TemplateView.as_view(
+        template_name="robots.txt", content_type='text/plain')
+        ),
+    path('sitemap.xml', TemplateView.as_view(
+        template_name="sitemap.xml", content_type='text/xml')
+        ),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
