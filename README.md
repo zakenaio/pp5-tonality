@@ -270,10 +270,6 @@ Gallery
     - Any additional notes about this feature.
 
 
-| Device | Home | About | Contact | Records | Details | Bag | Checkout | Checkout2 | Edit | Add | Sign in | Order | Faq |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Mobile Small | ![screenshot](documentation/responsive/home-mobile-small.png) | ![screenshot](documentation/responsive/about-mobile-small.png) | ![screenshot](documentation/responsive/contact-mobile-small.png) | ![screenshot](documentation/responsiverecords-mobile-small.png) | ![screenshot](documentation/responsive/detail-mobile-small.png) | ![screenshot](documentation/responsive/bag-mobile-small.png) | ![screenshot](documentation/responsive/checkout-mobile-small.png) | ![screenshot](documentation/responsive/checkout2-mobile-small.png) | ![screenshot](documentation/responsive/edit-mobile-small) | ![screenshot](documentation/responsive/add-mobile-small) | ![screenshot](documentation/responsive/signin-mobile-small) | ![screenshot](documentation/responsive/order-mobile-small) | ![screenshot](documentation/responsive/faq-mobile-small) 
-
 ## Tools & Technologies Used
 
 - [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
