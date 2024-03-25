@@ -73,9 +73,9 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| checkout | checkout.css | ![screenshot](documentation/validation/css-checkout.png) | |
-| profiles | profile.css | ![screenshot](documentation/validation/css-profiles.png) | |
-| static | base.css | ![screenshot](documentation/validation/css-home.png) | |
+| checkout | checkout.css | ![screenshot](documentation/testing/css-checkout.png) | |
+| profiles | profile.css | ![screenshot](documentation/testing/css-profiles.png) | |
+| static | base.css | ![screenshot](documentation/testing/css-home.png) | |
 
 ### JavaScript
 
@@ -83,8 +83,8 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| checkout | stripe_elements.js | ![screenshot](documentation/validation/js-stripe.png) | |
-| profiles | countryfield.js | ![screenshot](documentation/validation/js-countryfield.png) | |
+| checkout | stripe_elements.js | ![screenshot](documentation/testing/validation/js-stripe.png) | |
+| profiles | countryfield.js | ![screenshot](documentation/testing/validation/js-countryfield.png) | |
 
 ### Python
 
@@ -92,15 +92,15 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| about | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/about/urls.py) | ![screenshot](documentation/validation/pep8-about-urls.png) | |
-| about | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/about/views.py) | ![screenshot](documentation/validation/pep8-about-views.png) | |
+| about | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/about/urls.py) | ![screenshot](documentation/testing/validation/pep8-about-urls.png) | |
+| about | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/about/views.py) | ![screenshot](documentation/testing/validation/pep8-about-views.png) | |
 
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
-| bag | contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/bag/contexts.py) | ![screenshot](documentation/validation/pep8-bag-contexts.png) | |
+| bag | contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/bag/contexts.py) | ![screenshot](documentation/testing/validation/pep8-bag-contexts.png) | |
 | bag | bag_tools.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/bag/templatetags/bag_tools.py) | ![screenshot](documentation/validation/pep8-bag-bagtools.png) | |
-| bag | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/bag/urls.py) | ![screenshot](documentation/validation/pep8-bag-url.png) | |
-| bag | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/bag/views.py) | ![screenshot](documentation/validation/pep8-bag-views.png) | |
+| bag | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/bag/urls.py) | ![screenshot](documentation/testing/validation/pep8-bag-url.png) | |
+| bag | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/bag/views.py) | ![screenshot](documentation/testing/validation/pep8-bag-views.png) | |
 
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
