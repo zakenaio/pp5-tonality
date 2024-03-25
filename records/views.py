@@ -48,7 +48,7 @@ def all_records(request):
             
             # Generalized search logic that looks for the query in various fields
             queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(category__name__icontains=query)
-            records = records.filter(queries)
+            records = records.filter(queries).distinct()
 
     current_sorting = f'{sort}_{direction}'
 
