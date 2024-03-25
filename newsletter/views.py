@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from .forms import NewsletterForm
 
+
 def newsletter_subscribe(request):
     if request.method == 'POST':
         form = NewsletterForm(request.POST)
@@ -22,4 +23,4 @@ def newsletter_subscribe(request):
     else:
         form = NewsletterForm()
 
-    return redirect(reverse('home')) 
+    return redirect(reverse('home'))

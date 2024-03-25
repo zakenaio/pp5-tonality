@@ -1,4 +1,5 @@
-from .models import FAQ  
+from .models import FAQ
+
 
 def faq_processor(request):
     faqs = FAQ.objects.all()

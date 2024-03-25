@@ -4,6 +4,7 @@ from django.core.mail import send_mail
 from django.http import HttpResponseRedirect
 from .models import Contact
 
+
 def contact_view(request):
     if request.method == 'POST':
         name = request.POST.get('name')
@@ -24,7 +25,7 @@ def contact_view(request):
         )
 
         messages.success(request, 'Your message has been sent. Thank you!')
-        
+
         # Redirect back to the same page
         return HttpResponseRedirect(request.META.get('HTTP_REFERER', '/'))
 
