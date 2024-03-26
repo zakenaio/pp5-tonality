@@ -997,7 +997,6 @@ By understanding these differences and making the necessary adjustments, you can
 
 ### Media
 
-### Images:
 #### images for about/faq section
 - Lot of 20 Random Vinyl Records Vintage Collection ![Image](https://www.picclickimg.com/D58AAOSwG4Nhnd8S/Lot-of-20-Random-Vinyl-Records-Vintage-Collection.webp)
 https://www.picclickimg.com/D58AAOSwG4Nhnd8S/Lot-of-20-Random-Vinyl-Records-Vintage-Collection.webp
