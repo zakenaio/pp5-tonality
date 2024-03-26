@@ -291,15 +291,6 @@ The aforementioned tests are just an example of a few different project scenario
 
 ## User Story Testing
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | User Story | Screenshot |
 | --- | --- |
@@ -314,19 +305,30 @@ from the respective feature.
 | As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/features/feature09.png) |
 | repeat for all remaining user stories | x |
 
+
+| User Story | Screenshot |
+| --- | --- |
+|As a new shopper, I would like to view a list of records, so that I can select some and purchase. |![screenshot](documentation/feature_list.png) |
+|As a new shopper, I would like to view different genres/categories of Records, so that I can easily find the style I prefer. |![screenshot](documentation/feature_genre.png) |
+|As a new shopper, I would like to view a single record, so that I can see its details and make a proper decision. |![screenshot](documentation/feature_single_record.png) |
+|As a new shopper, I would like to be able to register for an account, so that I can see my profile. |![screenshot](documentation/feature_register.png) |
+|As a new shopper, I would like to get a confirmation email, so I can verify my account. |![screenshot](documentation/feature_confirmation_email.png) |
+|As a new shopper, I want to be able to quickly see if there are any deals to be made. |![screenshot](documentation/feature_deals.png) |
+|As a new shopper, I want to be able to quickly see the total amount of my shopping bag to avoid overspending. |![screenshot](documentation/feature_total_amount.png) |
+|As a new shopper, I want to be able to search the site for a specific item. |![screenshot](documentation/feature_search.png) |
+|As a new shopper, I want to be able to view all my items in my shopping bag. |![screenshot](documentation/feature_shopping_bag.png) |
+|As a new shopper, I want to be able to sort items to easily find the most rated (if I have created a rating system) or price. |![screenshot](documentation/feature_sort.png) |
+|As a new shopper, I want to be able to adjust the number of items in my shopping bag. |![screenshot](documentation/feature_adjust_items.png) |
+|As a new shopper, I want to be able to easily enter my payment securely. |![screenshot](documentation/feature_secure_payment.png) |
+|As a new shopper, I want to have a confirmation of my order, to easily see that there are no mistakes. |![screenshot](documentation/feature_order_confirmation.png) |
+|As a returning Shopper, I would like to easily sign in and out, so that I can access my personal information. |![screenshot](documentation/feature_sign_in_out.png) |
+|As a returning Shopper, I would like to have a personal profile, so that I can view my order history, and save my payment information. |![screenshot](documentation/feature_personal_profile.png) |
+|As a site administrator, I want to be able to add an item to the store. |![screenshot](documentation/feature_add_item.png) |
+|As a site administrator, I want to be able to edit and update items in the store, with prices, images, and various options. |![screenshot](documentation/feature_edit_update.png) |
+|As a site administrator, I must be able to remove an item that is no longer available. |![screenshot](documentation/feature_remove_item.png) |
+
 ## Bugs
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-This section is primarily used for JavaScript and Python applications,
-but feel free to use this section to document any HTML/CSS bugs you might run into.
-
-It's very important to document any bugs you've discovered while developing the project.
-Make sure to include any necessary steps you've implemented to fix the bug(s) as well.
-
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - JS Uncaught ReferenceError: `foobar` is undefined/not defined
 
@@ -358,66 +360,9 @@ Make sure to include any necessary steps you've implemented to fix the bug(s) as
 
     - To fix this, I _____________________.
 
-### GitHub **Issues**
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-An improved way to manage bugs is to use the built-in **Issues** tracker on your GitHub repository.
-To access your Issues, click on the "Issues" tab at the top of your repository.
-Alternatively, use this link: https://github.com/zakenaio/pp5-tonality/issues
-
-If using the Issues tracker for your bug management, you can simplify the documentation process.
-Issues allow you to directly paste screenshots into the issue without having to first save the screenshot locally,
-then uploading into your project.
-
-You can add labels to your issues (`bug`), assign yourself as the owner, and add comments/updates as you progress with fixing the issue(s).
-
-Once you've sorted the issue, you should then "Close" it.
-
-When showcasing your bug tracking for assessment, you can use the following format:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-**Fixed Bugs**
-
-[![GitHub issue custom search](https://img.shields.io/github/issues-search?query=repo%3Azakenaio%2Fpp5-tonality%20label%3Abug&label=bugs)](https://github.com/zakenaio/pp5-tonality/issues?q=is%3Aissue+is%3Aclosed+label%3Abug)
-
-All previously closed/fixed bugs can be tracked [here](https://github.com/zakenaio/pp5-tonality/issues?q=is%3Aissue+is%3Aclosed).
-
-| Bug | Status |
-| --- | --- |
-| [JS Uncaught ReferenceError: `foobar` is undefined/not defined](https://github.com/zakenaio/pp5-tonality/issues/1) | Closed |
-| [Python `'ModuleNotFoundError'` when trying to import module from imported package](https://github.com/zakenaio/pp5-tonality/issues/2) | Closed |
-| [Django `TemplateDoesNotExist` at /appname/path appname/template_name.html](https://github.com/zakenaio/pp5-tonality/issues/3) | Closed |
-
-**Open Issues**
-
-[![GitHub issues](https://img.shields.io/github/issues/zakenaio/pp5-tonality)](https://github.com/zakenaio/pp5-tonality/issues)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed/zakenaio/pp5-tonality)](https://github.com/zakenaio/pp5-tonality/issues?q=is%3Aissue+is%3Aclosed)
-
-Any remaining open issues can be tracked [here](https://github.com/zakenaio/pp5-tonality/issues).
-
-| Bug | Status |
-| --- | --- |
-| [JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).](https://github.com/zakenaio/pp5-tonality/issues/4) | Open |
-| [Python `E501 line too long` (93 > 79 characters)](https://github.com/zakenaio/pp5-tonality/issues/5) | Open |
 
 ## Unfixed Bugs
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-You will need to mention unfixed bugs and why they were not fixed.
-This section should include shortcomings of the frameworks or technologies used.
-Although time can be a big variable to consider, paucity of time and difficulty understanding
-implementation is not a valid reason to leave bugs unfixed.
-
-If you've identified any unfixed bugs, no matter how small, be sure to list them here.
-It's better to be honest and list them, because if it's not documented and an assessor finds the issue,
-they need to know whether or not you're aware of them as well, and why you've not corrected/fixed them.
-
-Some examples:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+BUGS! 
 
 - On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
 
@@ -437,11 +382,6 @@ Some examples:
 
     - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 > [!NOTE]  
 > There are no remaining bugs that I am aware of.
