@@ -50,16 +50,12 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | --- | --- | --- | --- | --- |
 | about | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/about/urls.py) | ![screenshot](documentation/testing/validation/pep8-about-urls.png) | |
 | about | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/about/views.py) | ![screenshot](documentation/testing/validation/pep8-about-views.png) | |
-
 | Directory | File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- | --- |
 | bag | contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/bag/contexts.py) | ![screenshot](documentation/testing/validation/pep8-bag-contexts.png) | |
 | bag | bag_tools.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/bag/templatetags/bag_tools.py) | ![screenshot](documentation/testing/validation/pep8-bag-bagtools.png) | |
 | bag | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/bag/urls.py) | ![screenshot](documentation/testing/validation/pep8-bag-url.png) | |
 | bag | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/bag/views.py) | ![screenshot](documentation/testing/validation/pep8-bag-views.png) | |
-
 | Directory | File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- | --- |
 | checkout | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/admin.py) | ![screenshot](documentation/testing/validation/pep8-checkout-admin.png) | |
 | checkout | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/forms.py) | ![screenshot](documentation/testing/validation/pep8-checkout-forms.png) | |
 | checkout | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/models.py) | ![screenshot](documentation/testing/validation/pep8-checkout-models.png) | |
@@ -68,55 +64,40 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | checkout | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/views.py) | ![screenshot](documentation/testing/validation/pep8-checkout-views.png) | |
 | checkout | webhook_handler.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/webhook_handler.py) | ![screenshot](documentation/testing/validation/pep8-checkout-whh.png) | |
 | checkout | webhooks.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/checkout/webhooks.py) | ![screenshot](documentation/testing/validation/pep8-checkout-wh.png) | |
-
 | Directory | File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- | --- |
 | contact | context_processors.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/contact/context_processors.py) | ![screenshot](documentation/testing/validation/pep8-contact-context.png) | |
 | contact | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/contact/forms.py) | ![screenshot](documentation/testing/validation/pep8-contact-forms.png) | |
 | contact | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/contact/models.py) | ![screenshot](documentation/testing/validation/pep8-contact-models.png) | |
 | contact | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/contact/urls.py) | ![screenshot](documentation/testing/validation/pep8-contact-urls.png) | |
 | contact | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/contact/views.py) | ![screenshot](documentation/testing/validation/pep8-contact-views.png) | |
-
-
 | Directory | File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- | --- |
 | faq | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/faq/admin.py) | ![screenshot](documentation/testing/validation/pep8-faq-admin.png) | |
 | faq | context_processors.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/faq/context_processors.py) | ![screenshot](documentation/testing/validation/pep8-faq-context.png) | |
 | faq | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/faq/models.py) | ![screenshot](documentation/testing/validation/pep8-faq-models.png) | |
 | faq | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/faq/urls.py) | ![screenshot](documentation/testing/validation/pep8-faq-urls.png) | |
 | faq | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/faq/views.py) | ![screenshot](documentation/testing/validation/pep8-faq-views.png) | |
-
 | Directory | File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- | --- |
 | home | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/home/urls.py) | ![screenshot](documentation/testing/validation/pep8-home-urls.png) | |
 | home | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/home/views.py) | ![screenshot](documentation/testing/validation/pep8-home-views.png) | |
-
 | Directory | File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- | --- |
 | newsletter | content_processor.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/newsletter/content_processor.py) | ![screenshot](documentation/testing/validation/pep8-newsletter-context.png) | |
 | newsletter | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/newsletter/forms.py) | ![screenshot](documentation/testing/validation/pep8-newsletter-forms.png) | |
 | newsletter | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/newsletter/models.py) | ![screenshot](documentation/testing/validation/pep8-newsletter-models.png) | |
 | newsletter | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/newsletter/urls.py) | ![screenshot](documentation/testing/validation/pep8-newsletter-urls.png) | |
 | newsletter | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/newsletter/views.py) | ![screenshot](documentation/testing/validation/pep8-newsletter-views.png) | |
-
 | Directory | File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- | --- |
 | profiles | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/profiles/forms.py) | ![screenshot](documentation/testing/validation/pep8-profiles-forms.png) | |
 | profiles | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/profiles/models.py) | ![screenshot](documentation/testing/validation/pep8-profiles-models.png) | |
 | profiles | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/profiles/urls.py) | ![screenshot](documentation/testing/validation/pep8-profiles-urls.png) | |
 | profiles | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/profiles/views.py) | ![screenshot](documentation/testing/validation/pep8-profiles-views.png) | |
-
 | Directory | File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- | --- |
 | records | admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/records/admin.py) | ![screenshot](documentation/testing/validation/pep8-records-admin.png) | |
 | records | forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/records/forms.py) | ![screenshot](documentation/testing/validation/pep8-records-forms.png) | |
 | records | models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/records/models.py) | ![screenshot](documentation/testing/validation/pep8-records-models.png) | |
 | records | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/records/urls.py) | ![screenshot](documentation/testing/validation/pep8-records-urls.png) | |
 | records | views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/records/views.py) | ![screenshot](documentation/testing/validation/pep8-records-views.png) | |
 | records | widgets.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/records/widgets.py) | ![screenshot](documentation/testing/validation/pep8-records-widgets.png) | |
-
 | Directory | File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- | --- |
 | tonality | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/tonality/urls.py) | ![screenshot](documentation/testing/validation/pep8-tonality-urls.png) | |
 |  | custom_storages.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/zakenaio/pp5-tonality/main/custom_storages.py) | ![screenshot](documentation/testing/validation/pep8-customstorage.png) | |
 
@@ -187,6 +168,14 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Add | | | | | |
 | | Adding a new record should list it in the records page | Fill in details and save | New record appears in the list | Test concluded and passed | [![Add Record](https://i.gyazo.com/27fb0844a87fd705ad89b245ff7f10a4.gif)](https://gyazo.com/27fb0844a87fd705ad89b245ff7f10a4) |
 | | Required fields must be filled to successfully add a record | Attempt to save with missing required fields | Error messages for missing fields displayed | Test concluded and passed | [![Required Fields](https://i.gyazo.com/example-required-fields.gif)](https://gyazo.com/example-required-fields) |
+| Sign In | | | | | |
+| | Entering correct credentials should sign the user in | Enter username and password and submit | User is signed in and redirected to the homepage | Test concluded and passed | [![Sign In](https://i.gyazo.com/example-sign-in.gif)](https://gyazo.com/example-sign-in) |
+| | Entering incorrect credentials should display an error message | Enter incorrect username or password and submit | Error message displayed, preventing sign in | Test concluded and passed | [![Sign In Error](https://i.gyazo.com/example-sign-in-error.gif)](https://gyazo.com/example-sign-in-error) |
+| | Signing out should redirect the user to the sign-in page | Click the sign-out button | User is signed out and redirected to the sign-in page | Test concluded and passed | [![Sign Out](https://i.gyazo.com/example-sign-out.gif)](https://gyazo.com/example-sign-out) |
+| Sign Up | | | | | |
+| | Filling in the registration form correctly should create a new user account | Fill in the registration form and submit | New user account is created and confirmation email is sent | Test concluded and passed | [![Sign Up](https://i.gyazo.com/example-sign-up.gif)](https://gyazo.com/example-sign-up) |
+| | Attempting to register with an already used email should display an error | Use an email already in the system and submit | Error message displayed, preventing account creation | Test concluded and passed | [![Sign Up Error](https://i.gyazo.com/example-sign-up-error.gif)](https://gyazo.com/example-sign-up-error) |
+| | After successful registration, the user should be redirected to a confirmation page or the homepage | Complete registration successfully | User is redirected to the homepage or a confirmation page | Test concluded and passed | [![Sign Up Redirect](https://i.gyazo.com/example-sign-up-redirect.gif)](https://gyazo.com/example-sign-up-redirect) |
 
 
 
