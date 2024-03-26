@@ -988,14 +988,6 @@ By understanding these differences and making the necessary adjustments, you can
 ### External Links:
 - [Comprehensive Guide to Grading Vinyl Records](https://thevinylfactory.com/features/a-comprehensive-guide-to-grading-vinyl-records/)
 
-### Images:
-#### images for about/faq section
-- Lot of 20 Random Vinyl Records Vintage Collection ![Image](https://www.picclickimg.com/D58AAOSwG4Nhnd8S/Lot-of-20-Random-Vinyl-Records-Vintage-Collection.webp)
-- Sound Waves Vector Illustration ![Image](https://png.pngtree.com/png-vector/20190811/ourlarge/pngtree-sound-waves-vector-illustration-png-image_1686908.jpg)
-
-#### Album covers 
-- are all sourced from Discorg. 
-- [Discorg](https://www.discogs.com/)
 
 ### Content
 
@@ -1005,10 +997,17 @@ By understanding these differences and making the necessary adjustments, you can
 
 ### Media
 
-| Source | Location | Type | Notes |
-| --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
+### Images:
+#### images for about/faq section
+- Lot of 20 Random Vinyl Records Vintage Collection ![Image](https://www.picclickimg.com/D58AAOSwG4Nhnd8S/Lot-of-20-Random-Vinyl-Records-Vintage-Collection.webp)
+https://www.picclickimg.com/D58AAOSwG4Nhnd8S/Lot-of-20-Random-Vinyl-Records-Vintage-Collection.webp
 
+- Sound Waves Vector Illustration ![Image](https://png.pngtree.com/png-vector/20190811/ourlarge/pngtree-sound-waves-vector-illustration-png-image_1686908.jpg)
+https://png.pngtree.com/png-vector/20190811/ourlarge/pngtree-sound-waves-vector-illustration-png-image_1686908.jpg
+
+#### Album covers 
+- are all sourced from Discorg. 
+- [Discorg](https://www.discogs.com/)
 
 ### Acknowledgements
 
