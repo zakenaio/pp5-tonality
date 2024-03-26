@@ -52,7 +52,7 @@ Essentially, we wanted our records to stand out as beacons of color and exciteme
 
 And it's not just about Techno – we also paid homage to the shadowy allure of Psytrance. We balanced its dark undertones with bursts of psychedelic colors, capturing the genre's dynamic contrasts and enigmatic appeal.
 
-![UX Menu Mobile](documentation/testing/responsive/menu-mobile-small.png)![UX Menu Desktop](documentation/resting/tesponsive/menu-desktop-small.png)
+![UX Menu Mobile](documentation/testing/responsive/menu-mobile-small.png)![UX Menu Desktop](documentation/testing/responsive/menu-desktop-small.png)
 
 In short, our website isn't just a platform for browsing records – it's a captivating journey into the heart of the underground music scene, where every click is a step into a world of vibrant beats and electrifying melodies.
 
