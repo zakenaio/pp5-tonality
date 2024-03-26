@@ -290,12 +290,12 @@ When in doubt, use the above method instead, and delete the table below.
 |As a new shopper, I would like to view different genres/categories of Records, so that I can easily find the style I prefer. |![screenshot](documentation/feature_genre.png) |
 |As a new shopper, I would like to view a single record, so that I can see its details and make a proper decision. |![screenshot](documentation/feature_singel_record.png) |
 |As a new shopper, I would like to be able to register for an account, so that I can see my profile. |![screenshot](documentation/feature_register.png) |
-|As a new shopper, I would like to get a confirmation email, so I can verify my account. |![screenshot](documentation/feature_confirmation_email.png) |
+|As a new shopper, I would like to get a confirmation email, so I can verify my account. |![screenshot](documentation/feature_order_confirmation.png) |
 |As a new shopper, I want to be able to quickly see if there are any deals to be made. |![screenshot](documentation/feature_deals.png) |
 |As a new shopper, I want to be able to quickly see the total amount of my shopping bag to avoid overspending. |![screenshot](documentation/feature_total_amount.png) |
 |As a new shopper, I want to be able to search the site for a specific item. |[![Image from Gyazo](https://i.gyazo.com/28af1f02d9d266835e3347fd7c1523bc.gif)](https://gyazo.com/28af1f02d9d266835e3347fd7c1523bc) |
 |As a new shopper, I want to be able to view all my items in my shopping bag. |![screenshot](documentation/feature_shopping_bag.png) |
-|As a new shopper, I want to be able to sort items to easily find the most rated (if I have created a rating system) or price. |[![Image from Gyazo](https://i.gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f.gif)](https://gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f) |
+|As a new shopper, I want to be able to sort items to easily find the most rated (if I have created a rating system) or price. | [![Image from Gyazo](https://i.gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f.gif)](https://gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f) |
 |As a new shopper, I want to be able to adjust the number of items in my shopping bag. |[![Edit quantity](https://i.gyazo.com/71388a42360733ade872ad7c114b2d5e.gif)](https://gyazo.com/71388a42360733ade872ad7c114b2d5e) |
 |As a new shopper, I want to be able to easily enter my payment securely. |![screenshot](documentation/feature_secure_payment.png) |
 |As a new shopper, I want to have a confirmation of my order, to easily see that there are no mistakes. |![screenshot](documentation/feature_order_confirmation.png) |
