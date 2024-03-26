@@ -158,13 +158,12 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | slow on mobile, heroku/amazon. same cookies|
 | Records | ![screenshot](documentation/lighthouse/lighthouse-records-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-records-desktop.png) | Slow performance, many images from ams. |
 | Details | ![screenshot](documentation/lighthouse/lighthouse-details-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-details-desktop.png) | Slow ams, same cookie warning |
-| Bag | ![screenshot](documentation/lighthouse/lighthouse-bag-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-bag-desktop.png) | |
-| Checkout | ![screenshot](documentation/lighthouse/lighthouse-checkout-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-checkout-desktop.png) | |
+| Bag | ![screenshot](documentation/lighthouse/lighthouse-bag-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-bag-desktop.png) | slow, inc/decr-buttons have no names, links are not crawlable, same cookie warning  |
+| Checkout | ![screenshot](documentation/lighthouse/lighthouse-checkout-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-checkout-desktop.png) | Same as others|
 | Edit | ![screenshot](documentation/lighthouse/lighthouse-edit-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-edit-desktop.png) | |
 | Add | ![screenshot](documentation/lighthouse/lighthouse-add-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-add-desktop.png) | |
 | Sign in | ![screenshot](documentation/lighthouse/lighthouse-signin-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-signin-desktop.png) | |
-| Order | ![screenshot](documentation/lighthouse/lighthouse-order-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-order-desktop.png) | |
-| Faq | ![screenshot](documentation/lighthouse/lighthouse-faq-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-faq-desktop.png) | |
+
 
 ## Defensive Programming
 
