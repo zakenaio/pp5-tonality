@@ -125,29 +125,47 @@ Arrow - Top line and marker for messages top right, under bag/cart.
 
 ## User Stories
 
-### New Site Users
+### New Shopper
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+- As a new shopper, I would like to view a list of records, so that I can select some and purchase.
 
-### Returning Site Users
+- As a new shopper, I would like to view different genres/categories of Records, so that I can easily find the style I prefer.
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
+- As a new shopper, I would like to view a single record, so that I can see its details and make a proper decision.
+
+- As a new shopper, I would like to be able to register for an account, so that I can see my profile.
+
+- As a new shopper, I would like to get a confirmation email, so I can verify my account.
+
+- As a new shopper, I want to be able to quickly see if there are any deals to be made.
+
+- As a new shopper, I want to be able to quickly see the total amount of my shopping bag to avoid overspending.
+
+- As a new shopper, I want to be able to search the site for a specific item.
+
+- As a new shopper, I want to be able to view all my items in my shopping bag.
+
+- As a new shopper, I want to be able to sort items to easily find the most rated (if I have created a rating system) or price.
+
+- As a new shopper, I want to be able to adjust the number of items in my shopping bag.
+
+- As a new shopper, I want to be able to easily enter my payment securely.
+
+- As a new shopper, I want to have a confirmation of my order, to easily see that there are no mistakes.
+
+### Returning Shopper
+
+- As a returning Shopper, I would like to easily sign in and out, so that I can access my personal information.
+
+- As a returning Shopper, I would like to have a personal profile, so that I can view my order history, and save my payment information.
+
 
 ### Site Admin
 
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I want to be able to add an item to the store.
+- As a site administrator, I want to be able to edit and update items in the store, with prices, images, and various options.
+- As a site administrator, I must be able to remove an item that is no longer available.
+
 
 ## Wireframes
 DONT FORGET! 
@@ -291,7 +309,10 @@ Checkout
 - [![AWS S3](https://img.shields.io/badge/AWS_S3-grey?logo=amazons3&logoColor=569A31)](https://aws.amazon.com/s3) used for online static file storage.
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
 - [![DBeaver](https://img.shields.io/badge/DBeaver-grey?logo=dbeaver&logoColor=382923)](https://dbeaver.io/download) used for ERD.
-- https://gyazo.com/
+-  [phind](https://www.phind.com/) used for tips and trix, a great way to make progress when stuck.
+- [Gemini](https://gemini.google.com/) Used for spell check, and grammar for README and TESTING.
+- [Gyazo](https://gyazo.com/) Used for GIFs in README and TESTING.
+
 
 ## Database Design
 
@@ -299,6 +320,7 @@ FAQ
 ```python
 from django.db import models
 class FAQ(models.Model):
+
     """ FAQs model with a question and answer. """
     question = models.CharField(max_length=250, null=False, blank=False)
     answer = models.TextField(null=False, blank=False)
@@ -309,6 +331,7 @@ class FAQ(models.Model):
 
     def __str__(self):
         return self.question
+
 ```
 
 - question: Stores the text of the question (limited to 250 characters).
@@ -418,6 +441,7 @@ class Category(models.Model):
     def get_friendly_name(self):
         return self.friendly_name
 
+
 class Records(models.Model):
 
     class Meta:
@@ -442,6 +466,7 @@ class Records(models.Model):
 
     def __str__(self):
         return self.nam
+
 ```
 
 - Category: This is a many-to-many relationship, allowing a product to belong to multiple categories.
