@@ -167,19 +167,15 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | | Editing a record's details should update the record with the new information | Modify details and save | Record is updated with new details | Test concluded and passed | [![Edit Record](https://i.gyazo.com/2b902c73629acd6108191b34ed5b18d1.gif)](https://gyazo.com/2b902c73629acd6108191b34ed5b18d1) |
 | Add | | | | | |
 | | Adding a new record should list it in the records page | Fill in details and save | New record appears in the list | Test concluded and passed | [![Add Record](https://i.gyazo.com/27fb0844a87fd705ad89b245ff7f10a4.gif)](https://gyazo.com/27fb0844a87fd705ad89b245ff7f10a4) |
-| | Required fields must be filled to successfully add a record | Attempt to save with missing required fields | Error messages for missing fields displayed | Test concluded and passed | [![Required Fields](https://i.gyazo.com/example-required-fields.gif)](https://gyazo.com/example-required-fields) |
+| | Required fields must be filled to successfully add a record | Attempt to save with missing required fields | Error messages for missing fields displayed | Test concluded and passed | [![Required Fields](https://i.gyazo.com/f713134681b63c60c567ef6a6bb61eee.gif)](https://gyazo.com/f713134681b63c60c567ef6a6bb61eee) |
 | Sign In | | | | | |
-| | Entering correct credentials should sign the user in | Enter username and password and submit | User is signed in and redirected to the homepage | Test concluded and passed | [![Sign In](https://i.gyazo.com/example-sign-in.gif)](https://gyazo.com/example-sign-in) |
-| | Entering incorrect credentials should display an error message | Enter incorrect username or password and submit | Error message displayed, preventing sign in | Test concluded and passed | [![Sign In Error](https://i.gyazo.com/example-sign-in-error.gif)](https://gyazo.com/example-sign-in-error) |
-| | Signing out should redirect the user to the sign-in page | Click the sign-out button | User is signed out and redirected to the sign-in page | Test concluded and passed | [![Sign Out](https://i.gyazo.com/example-sign-out.gif)](https://gyazo.com/example-sign-out) |
+| | Entering correct credentials should sign the user in | Enter username and password and submit | User is signed in and redirected to the homepage | Test concluded and passed | [![Sign In](https://i.gyazo.com/a0afda4052d2531ed7c4ae085a04305c.gif)](https://gyazo.com/a0afda4052d2531ed7c4ae085a04305c) |
+| | Entering incorrect credentials should display an error message | Enter incorrect username or password and submit | Error message displayed, preventing sign in | Test concluded and passed | [![Sign In Error](https://i.gyazo.com/fdfee5bae6194e165d1a1a7bb9e64007.gif)](https://gyazo.com/fdfee5bae6194e165d1a1a7bb9e64007) |
+| | Signing out should redirect the user to the homepage | Click the sign-out button | User is signed out and redirected to the homepage | Test concluded and passed | [![Sign Out](https://i.gyazo.com/99909d56eb23ad288f1b7105d1eba133.gif)](https://gyazo.com/99909d56eb23ad288f1b7105d1eba133) |
 | Sign Up | | | | | |
 | | Filling in the registration form correctly should create a new user account | Fill in the registration form and submit | New user account is created and confirmation email is sent | Test concluded and passed | [![Sign Up](https://i.gyazo.com/example-sign-up.gif)](https://gyazo.com/example-sign-up) |
 | | Attempting to register with an already used email should display an error | Use an email already in the system and submit | Error message displayed, preventing account creation | Test concluded and passed | [![Sign Up Error](https://i.gyazo.com/example-sign-up-error.gif)](https://gyazo.com/example-sign-up-error) |
 | | After successful registration, the user should be redirected to a confirmation page or the homepage | Complete registration successfully | User is redirected to the homepage or a confirmation page | Test concluded and passed | [![Sign Up Redirect](https://i.gyazo.com/example-sign-up-redirect.gif)](https://gyazo.com/example-sign-up-redirect) |
-
-
-
-
 
 
 ## User Story Testing
@@ -195,9 +191,9 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 |As a new shopper, I want to be able to quickly see the total amount of my shopping bag to avoid overspending. |![screenshot](documentation/feature_total_amount.png) |
 |As a new shopper, I want to be able to search the site for a specific item. |[![Image from Gyazo](https://i.gyazo.com/28af1f02d9d266835e3347fd7c1523bc.gif)](https://gyazo.com/28af1f02d9d266835e3347fd7c1523bc) |
 |As a new shopper, I want to be able to view all my items in my shopping bag. |![screenshot](documentation/feature_shopping_bag.png) |
-|As a new shopper, I want to be able to sort items to easily find the most rated (if I have created a rating system) or price. | [![Image from Gyazo](https://i.gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f.gif)](https://gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f) |
+|As a new shopper, I want to be able to sort items to easily find the most rated or price. | [![Sort](https://i.gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f.gif)](https://gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f) |
 |As a new shopper, I want to be able to adjust the number of items in my shopping bag. |[![Edit quantity](https://i.gyazo.com/71388a42360733ade872ad7c114b2d5e.gif)](https://gyazo.com/71388a42360733ade872ad7c114b2d5e) |
-|As a new shopper, I want to be able to easily enter my payment securely. |![screenshot](documentation/feature_secure_payment.png) |
+|As a new shopper, I want to be able to easily enter my payment securely. |![Secure payment](documentation/feature_secure_payment.png) |
 |As a new shopper, I want to have a confirmation of my order, to easily see that there are no mistakes. |![screenshot](documentation/feature_order_confirmation.png) |
 |As a returning Shopper, I would like to easily sign in and out, so that I can access my personal information. |![screenshot](documentation/feature_sign_in_out.png) |
 |As a returning Shopper, I would like to have a personal profile, so that I can view my order history, and save my payment information. |![screenshot](documentation/feature_personal_profile.png) |
