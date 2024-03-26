@@ -191,7 +191,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 |As a new shopper, I want to be able to quickly see the total amount of my shopping bag to avoid overspending. |![screenshot](documentation/feature_total_amount.png) |
 |As a new shopper, I want to be able to search the site for a specific item. |[![Image from Gyazo](https://i.gyazo.com/28af1f02d9d266835e3347fd7c1523bc.gif)](https://gyazo.com/28af1f02d9d266835e3347fd7c1523bc) |
 |As a new shopper, I want to be able to view all my items in my shopping bag. | ![screenshot](documentation/feature_shopping_bag.png) |
-|As a new shopper, I want to be able to sort on price, and rating. |[![Sort](https://i.gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f.gif)](https://gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f) |
+|As a new shopper, I want to be able to sort on price, and rating. |[![Sort](https://i.gyazo.com/047c10abb69d54dda62d512dd8d0803b.gif)](https://gyazo.com/047c10abb69d54dda62d512dd8d0803b) |
 |As a new shopper, I would like to view different genres/categories of Records, so that I can easily find the style I prefer. |![screenshot](documentation/feature_genre.png) |
 |As a new shopper, I want to be able to adjust the number of items in my shopping bag. |[![Edit quantity](https://i.gyazo.com/71388a42360733ade872ad7c114b2d5e.gif)](https://gyazo.com/71388a42360733ade872ad7c114b2d5e) |
 |As a new shopper, I want to be able to easily enter my payment securely. |![screenshot](documentation/feature_secure_payment.png) |
