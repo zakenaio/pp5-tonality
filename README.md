@@ -66,6 +66,10 @@ In short, our website isn't just a platform for browsing records – it's a capt
 
 ## Colour Scheme
 
+I used [coolors.co](https://coolors.co/) to generate my colour palette.
+
+![screenshot](documentation/colors1.png)
+
 background colors. 
 - `#212323` This dark grayish color is used for the body background, providing a subdued backdrop for the content. 
 - `#1a1b1b;` Slightly darker than the body background, this color is primarily used for the footer and dropdown menus, adding depth to these sections.
@@ -90,7 +94,6 @@ Buttons
 Menu / nav
 - `#1a1b1b` Dark background color employed for dropdown menus, ensuring contrast and visibility against the surrounding content.
 - `rgb(110, 107, 102)` Grayish text color used for dropdown items within menus, providing clear readability and navigation options, used as text color in form control. 
-- `rgb(26, 27, 27)` a darker grey for form control background. 
 
 Labels 
 - `#000`  Black color utilized for special label texts, drawing attention to specific information or categories.
@@ -105,9 +108,6 @@ Arrow - Top line and marker for messages top right, under bag/cart.
 - `#ffc107` Yellow color employed for warning messages, prompting users to proceed with caution.
 - `#17a2b8`  Cyan color associated with informational messages, providing users with additional context or details.
 
-I used [coolors.co](https://coolors.co/1a1a1a-202223-8b8986-188db8-81bcf6-247d3b-de4845) to generate my colour palette.
-
-![screenshot](documentation/colors1.png)
 
 ## Typography
 
@@ -153,67 +153,69 @@ I used [coolors.co](https://coolors.co/1a1a1a-202223-8b8986-188db8-81bcf6-247d3b
 DONT FORGET! 
 ### Mobile Wireframes
 
-< details >
-< summary > Click here to see the Mobile Wireframes < / summary >
+<details>
+<summary> Click here to see the Mobile Wireframes </summary>
 
 Home
-  - ![screenshot](documentation/wireframes/mobile-home.png)
+  - ![screenshot](documentation/wf-home-mobile.png)
 
-About
-  - ![screenshot](documentation/wireframes/mobile-about.png)
+Records
+  - ![screenshot](documentation/wf-records-mobile.png)
 
-Contact
-  - ![screenshot](documentation/wireframes/mobile-contact.png)
+Record Details
+  - ![screenshot](documentation/wf-details-mobile.png)
 
-Gallery
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
+Bag
+  - ![screenshot](documentation/wf-bag-mobile.png)
 
-etc.
-  - repeat for any remaining mobile wireframes
+Checkout
+  - ![screenshot](documentation/wf-checkout-mobile.png)
 
-< / details >
+</details>
 
 ### Tablet Wireframes
 
-< details >
-< summary > Click here to see the Tablet Wireframes < / summary >
+<details>
+<summary> Click here to see the Tablet Wireframes </summary>
 
 Home
-  - ![screenshot](documentation/wireframes/tablet-home.png)
+  - ![screenshot](documentation/wf-home-tablet.png)
 
-About
-  - ![screenshot](documentation/wireframes/tablet-about.png)
+Records
+  - ![screenshot](documentation/wf-records-tablet.png)
 
-Contact
-  - ![screenshot](documentation/wireframes/tablet-contact.png)
+Record Details
+  - ![screenshot](documentation/wf-details-tablet.png)
 
-Gallery
-  - ![screenshot](documentation/wireframes/tablet-gallery.png)
+Bag
+  - ![screenshot](documentation/wf-bag-tablet.png)
 
-etc.
-  - repeat for any remaining tablet wireframes
+Checkout
+  - ![screenshot](documentation/wf-checkout-tablet.png)
 
-< / details >
+</details>
 
 ### Desktop Wireframes
 
-< details >
-< summary > Click here to see the Desktop Wireframes < / summary >
+<details>
+<summary> Click here to see the Desktop Wireframes </summary>
 
 Home
-  - ![screenshot](documentation/wireframes/desktop-home.png)
+  - ![screenshot](documentation/wf-home-desktop.png)
 
-About
-  - ![screenshot](documentation/wireframes/desktop-about.png)
+Records
+  - ![screenshot](documentation/wf-records-desktop.png)
 
-Contact
-  - ![screenshot](documentation/wireframes/desktop-contact.png)
+Record Details
+  - ![screenshot](documentation/wf-details-desktop.png)
 
-Gallery
-  - ![screenshot](documentation/wireframes/desktop-gallery.png)
+Bag
+  - ![screenshot](documentation/wf-bag-desktop.png)
 
+Checkout
+  - ![screenshot](documentation/wf-checkout-desktop.png)
 
-< / details >
+</details>
 
 ## Features
 
