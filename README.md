@@ -40,19 +40,19 @@ Overall, creating a webshop for rare and classic Psytrance and Techno on vinyl c
 
 ## UX
 
-![UX Home](documentation/resting/responsive/home-desktop-medium.png)
+![UX Home](documentation/testing/responsive/home-desktop-medium.png)
 
 In crafting our website's aesthetic, we aimed to encapsulate the essence of the music scene it represents: dark, gritty, and atmospheric. While Techno is often associated with a monotonous, gray mood, we saw an opportunity to inject vibrancy and energy into the design.
 
 Our mission was to make the album covers pop against the dark backdrop of the site, radiating vividness and vitality. By adding a subtle glow behind them, we enhanced their visual impact, turning them into captivating focal points that draw the eye.
 
-![UX Records](documentation/resting/responsive/records-desktop-medium.png)
+![UX Records](documentation/testing/responsive/records-desktop-medium.png)
 
 Essentially, we wanted our records to stand out as beacons of color and excitement amidst a sea of darkness. By infusing dashes of vibrant hues into the design, we aimed to create a dynamic and engaging visual experience that mirrors the energy of the music itself.
 
 And it's not just about Techno – we also paid homage to the shadowy allure of Psytrance. We balanced its dark undertones with bursts of psychedelic colors, capturing the genre's dynamic contrasts and enigmatic appeal.
 
-![UX Menu Mobile](documentation/resting/responsive/menu-mobile-small.png)![UX Menu Desktop](documentation/resting/responsive/menu-desktop-small.png)
+![UX Menu Mobile](documentation/testing/responsive/menu-mobile-small.png)![UX Menu Desktop](documentation/resting/tesponsive/menu-desktop-small.png)
 
 In short, our website isn't just a platform for browsing records – it's a captivating journey into the heart of the underground music scene, where every click is a step into a world of vibrant beats and electrifying melodies.
 
