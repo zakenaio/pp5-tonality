@@ -154,10 +154,17 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | Some minor warnings |
-| About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | Some minor warnings |
-| Gallery | ![screenshot](documentation/lighthouse/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-home-desktop.png) | some warnings regarding third-party cookies in Best Practice |
+| About | ![screenshot](documentation/lighthouse/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-about-desktop.png) | slow on mobile, heroku/amazon. same cookies|
+| Records | ![screenshot](documentation/lighthouse/lighthouse-records-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-records-desktop.png) | Slow performance, many images from ams. |
+| Details | ![screenshot](documentation/lighthouse/lighthouse-details-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-details-desktop.png) | Slow ams, same cookie warning |
+| Bag | ![screenshot](documentation/lighthouse/lighthouse-bag-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-bag-desktop.png) | |
+| Checkout | ![screenshot](documentation/lighthouse/lighthouse-checkout-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-checkout-desktop.png) | |
+| Edit | ![screenshot](documentation/lighthouse/lighthouse-edit-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-edit-desktop.png) | |
+| Add | ![screenshot](documentation/lighthouse/lighthouse-add-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-add-desktop.png) | |
+| Sign in | ![screenshot](documentation/lighthouse/lighthouse-signin-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-signin-desktop.png) | |
+| Order | ![screenshot](documentation/lighthouse/lighthouse-order-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-order-desktop.png) | |
+| Faq | ![screenshot](documentation/lighthouse/lighthouse-faq-mobile.png) | ![screenshot](documentation/lighthouse/lighthouse-faq-desktop.png) | |
 
 ## Defensive Programming
 
