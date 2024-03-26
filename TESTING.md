@@ -176,6 +176,11 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | | Filling in the registration form correctly should create a new user account | Fill in the registration form and submit | New user account is created and confirmation email is sent | Test concluded and passed | [![Sign Up](https://i.gyazo.com/example-sign-up.gif)](https://gyazo.com/example-sign-up) |
 | | Attempting to register with an already used email should display an error | Use an email already in the system and submit | Error message displayed, preventing account creation | Test concluded and passed | [![Sign Up Error](https://i.gyazo.com/example-sign-up-error.gif)](https://gyazo.com/example-sign-up-error) |
 | | After successful registration, the user should be redirected to a confirmation page or the homepage | Complete registration successfully | User is redirected to the homepage or a confirmation page | Test concluded and passed | [![Sign Up Redirect](https://i.gyazo.com/example-sign-up-redirect.gif)](https://gyazo.com/example-sign-up-redirect) |
+| Contact | | | | | |
+| | Filling out the contact form i want a confirmation of the sent message | Fill in the contact form and submit | Visual feedback is given | Test concluded and passed | [![Contact](https://i.gyazo.com/6aa9310b074f7791b895665275ed539e.gif)](https://gyazo.com/6aa9310b074f7791b895665275ed539e) |
+| Newsletter | | | | | |
+| | Subscribing to the newsletter should confirm my subscription | Enter email and click subscribe | Confirmation message displayed | Test concluded and passed | [![subscribe](https://i.gyazo.com/00277502abb36b51b2aa4e5e30abb0a1.gif)](https://gyazo.com/00277502abb36b51b2aa4e5e30abb0a1) |
+| | Attempting to subscribe with an already subscribed email should display an error message | Use an email already subscribed and submit | Error message displayed, indicating already subscribed | Test concluded and passed | ![Subscribe error](documentation/testing/newsletter-error.png) |
 
 
 ## User Story Testing
