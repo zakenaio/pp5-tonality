@@ -40,13 +40,19 @@ Overall, creating a webshop for rare and classic Psytrance and Techno on vinyl c
 
 ## UX
 
+![UX Home](documentation/resting/responsive/home-desktop-medium.png)
+
 In crafting our website's aesthetic, we aimed to encapsulate the essence of the music scene it represents: dark, gritty, and atmospheric. While Techno is often associated with a monotonous, gray mood, we saw an opportunity to inject vibrancy and energy into the design.
 
 Our mission was to make the album covers pop against the dark backdrop of the site, radiating vividness and vitality. By adding a subtle glow behind them, we enhanced their visual impact, turning them into captivating focal points that draw the eye.
 
+![UX Records](documentation/resting/responsive/records-desktop-medium.png)
+
 Essentially, we wanted our records to stand out as beacons of color and excitement amidst a sea of darkness. By infusing dashes of vibrant hues into the design, we aimed to create a dynamic and engaging visual experience that mirrors the energy of the music itself.
 
 And it's not just about Techno – we also paid homage to the shadowy allure of Psytrance. We balanced its dark undertones with bursts of psychedelic colors, capturing the genre's dynamic contrasts and enigmatic appeal.
+
+![UX Menu Mobile](documentation/resting/responsive/menu-mobile-small.png)![UX Menu Desktop](documentation/resting/responsive/menu-desktop-small.png)
 
 In short, our website isn't just a platform for browsing records – it's a captivating journey into the heart of the underground music scene, where every click is a step into a world of vibrant beats and electrifying melodies.
 
@@ -168,7 +174,7 @@ Arrow - Top line and marker for messages top right, under bag/cart.
 
 
 ## Wireframes
-
+DONT FORGET! 
 ### Mobile Wireframes
 
 <details>
@@ -947,11 +953,29 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
+Local Development vs. Heroku Deployment: Key Differences
 
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
+While developing and testing your application locally can be convenient, the environment is distinct from a live deployment setting like Heroku. Here's a breakdown of the key differences:
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+1. Logging:
+Local: DEBUG mode is True, providing detailed error logs for easier troubleshooting.
+Heroku: DEBUG is False to optimize performance and minimize security risks.
+
+
+2. Database:
+Local: You likely use a local database (e.g., SQLite) for convenience.
+Heroku: Heroku's Postgres database offers a robust and managed solution for production use.
+
+
+3. Sensitive Information:
+Local: Sensitive data (e.g., SECRET_KEY, DATABASE_URL) might be stored in local configuration files.
+Heroku: Store such information securely as environment variables in Heroku, accessible only to your application.
+
+
+4. Static and Media Files:
+Local: These files might be served directly from your local development environment.
+Heroku: Services like Cloudinary and Whitenoise ensure efficient and secure delivery of static and media files in production.
+By understanding these differences and making the necessary adjustments, you can ensure your application runs smoothly and securely on Heroku, providing a reliable and optimal experience for your users.
 
 ## Credits
 
