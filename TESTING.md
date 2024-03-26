@@ -191,9 +191,9 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 |As a new shopper, I want to be able to quickly see the total amount of my shopping bag to avoid overspending. |![screenshot](documentation/feature_total_amount.png) |
 |As a new shopper, I want to be able to search the site for a specific item. |[![Image from Gyazo](https://i.gyazo.com/28af1f02d9d266835e3347fd7c1523bc.gif)](https://gyazo.com/28af1f02d9d266835e3347fd7c1523bc) |
 |As a new shopper, I want to be able to view all my items in my shopping bag. |![screenshot](documentation/feature_shopping_bag.png) |
-|As a new shopper, I want to be able to sort items to easily find the most rated or price. | [![Sort](https://i.gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f.gif)](https://gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f) |
+|As a new shopper, I want to be able to sort items to easily find the most rated,or price. |[![Image from Gyazo](https://i.gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f.gif)](https://gyazo.com/798eb4a1a1322ee4936fa923a5f99d7f) |
 |As a new shopper, I want to be able to adjust the number of items in my shopping bag. |[![Edit quantity](https://i.gyazo.com/71388a42360733ade872ad7c114b2d5e.gif)](https://gyazo.com/71388a42360733ade872ad7c114b2d5e) |
-|As a new shopper, I want to be able to easily enter my payment securely. |![Secure payment](documentation/feature_secure_payment.png) |
+|As a new shopper, I want to be able to easily enter my payment securely. |![screenshot](documentation/feature_secure_payment.png) |
 |As a new shopper, I want to have a confirmation of my order, to easily see that there are no mistakes. |![screenshot](documentation/feature_order_confirmation.png) |
 |As a returning Shopper, I would like to easily sign in and out, so that I can access my personal information. |![screenshot](documentation/feature_sign_in_out.png) |
 |As a returning Shopper, I would like to have a personal profile, so that I can view my order history, and save my payment information. |![screenshot](documentation/feature_personal_profile.png) |
@@ -209,16 +209,6 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
     ![screenshot](documentation/testing/bug-search.png)
 
     - Issue with a line break in the lin {{ seach.term }} making it not render correctly.
-
-
-## Unfixed Bugs
-BUGS! 
-
-- blablabla.
-
-    ![screenshot](documentation/testing/bug-search.png)
-
-    - i did nothing
 
 
 
