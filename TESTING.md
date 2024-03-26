@@ -167,66 +167,31 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 ## Defensive Programming
 
-
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Home | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature01.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature02.png) |
-| About | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature04.png) |
-| Gallery | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature05.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature06.png) |
-| Contact | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/features/feature07.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/features/feature08.png) |
-| repeat for all remaining pages | x | x | x | x | x |
+| | Clicking on a menu item brings me to the page | Does menu appear when clicked? | When clicked a menu appears, and you are redirected to the clicked page | Test concluded and passed | [![Menu](https://i.gyazo.com/ad9db4341ffe6745a0f80d54ef6829d7.gif)](https://gyazo.com/ad9db4341ffe6745a0f80d54ef6829d7)) |
+| | Entering a search term and clicking the magnifying glass should give me search results | tested by typing a seach quiery | page refresh an a result was shown |  | [![Search](https://i.gyazo.com/fef0c1a4542c313f13c398e1eea86053.gif)](https://gyazo.com/fef0c1a4542c313f13c398e1eea86053)) |
+| Records | | | | | |
+| | When hovering over a Record cover, the button for adding to bag should appear. | Hover over a record cover to see if the add to bag button appears. | The button appeared as expected. | Test concluded and passed | [![Add to bag](https://i.gyazo.com/39032d9e96e651404670e1d88635cc66.gif)](https://gyazo.com/39032d9e96e651404670e1d88635cc66) |
+| | Filtering records by genre should display only records from the selected genre. | Select a genre from the filter options and observe the records displayed. | Only records from the selected genre were displayed. | Test concluded and passed | [![Filter by Genere](https://i.gyazo.com/e2bb7bae06db972834cf191b8ac0c125.gif)](https://gyazo.com/e2bb7bae06db972834cf191b8ac0c125) |
+| | Sorting records by price, from low to high, should reorder the records accordingly. | Select the "Price Low to High" sorting option and observe the order of records. | Records were reordered from lowest to highest price as expected. | Test concluded and passed | [![Sort by Price](https://i.gyazo.com/2a0586de25497b3554dfe5f9b71d3fe6.gif)](https://gyazo.com/2a0586de25497b3554dfe5f9b71d3fe6) |
+| | Searching for a record by name should display relevant results. | Type a record name in the search bar and submit the search. | The search returned records with matching names. | Test concluded and passed | [![Search Record](https://i.gyazo.com/cf1bf0c2a5253f004a375a55becd7038.gif)](https://gyazo.com/cf1bf0c2a5253f004a375a55becd7038) |
+| | Viewing record details should display all relevant information about the record. | Click on a record to view its details. | The details page displayed all relevant information including tracklist, genre, and price. | Test concluded and passed | [![Record Details](https://i.gyazo.com/0adcdf291d6b435e36c663d5f351d1ef.gif)](https://gyazo.com/0adcdf291d6b435e36c663d5f351d1ef) |
+| Bag | | | | | |
+| | Clicking on the "View Bag" button should take me to the bag page | Click "View Bag" after adding items | Redirects to the bag page with items listed | Test concluded and passed | [![View Bag](https://i.gyazo.com/8df8a17706039980f55d01b3abf5984f.gif)](https://gyazo.com/8df8a17706039980f55d01b3abf5984f) |
+| | Updating the quantity of an item in the bag should reflect the correct total price | Change quantity and click "Update" | Total price updates accordingly | Test concluded and passed | [![Update Quantity](https://i.gyazo.com/9249065dadf2bf6e1274bc4e208ad4e7.gif)](https://gyazo.com/9249065dadf2bf6e1274bc4e208ad4e7) |
+| | Removing an item from the bag should remove it from the list and update the total price | Click "Remove" on an item | Item is removed and total price updates | Test concluded and passed | [![Remove Item](https://i.gyazo.com/c4f3bb3c790f158d4c9be7f574ce88b2.gif)](https://gyazo.com/c4f3bb3c790f158d4c9be7f574ce88b2) |
+| Edit | | | | | |
+| | Editing a record's details should update the record with the new information | Modify details and save | Record is updated with new details | Test concluded and passed | [![Edit Record](https://i.gyazo.com/2b902c73629acd6108191b34ed5b18d1.gif)](https://gyazo.com/2b902c73629acd6108191b34ed5b18d1) |
+| Add | | | | | |
+| | Adding a new record should list it in the records page | Fill in details and save | New record appears in the list | Test concluded and passed | [![Add Record](https://i.gyazo.com/27fb0844a87fd705ad89b245ff7f10a4.gif)](https://gyazo.com/27fb0844a87fd705ad89b245ff7f10a4) |
+| | Required fields must be filled to successfully add a record | Attempt to save with missing required fields | Error messages for missing fields displayed | Test concluded and passed | [![Required Fields](https://i.gyazo.com/example-required-fields.gif)](https://gyazo.com/example-required-fields) |
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
-Another way of performing defensive testing is a simple Pass/Fail for each test.
-The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
 
-When in doubt, use the above method instead, and delete the table below.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
-| Page | User Action | Expected Result | Pass/Fail | Comments |
-| --- | --- | --- | --- | --- |
-| Home | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-| repeat for all remaining pages | x | x | x | x |
 
 ## User Story Testing
 
