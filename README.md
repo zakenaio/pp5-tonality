@@ -74,9 +74,9 @@ In short, our website isn't just a platform for browsing records – it's a capt
 
 I used [coolors.co](https://coolors.co/) to generate my colour palette.
 
-![screenshot](documentation/colors1.png)
+![Colours](documentation/colors1.png)
 
-background colors. 
+background colours. 
 - `#212323` This dark grayish color is used for the body background, providing a subdued backdrop for the content. 
 - `#1a1b1b;` Slightly darker than the body background, this color is primarily used for the footer and dropdown menus, adding depth to these sections.
 
@@ -180,20 +180,20 @@ DONT FORGET!
 <details>
 <summary> Click here to see the Mobile Wireframes </summary>
 
-Home
-  - ![screenshot](documentation/wf-home-mobile.png)
+- **Home**
+  ![Home Mobile Wireframe](documentation/wf-home-mobile.png)
 
-Records
-  - ![screenshot](documentation/wf-records-mobile.png)
+- **Records**
+  ![Records Mobile Wireframe](documentation/wf-records-mobile.png)
 
-Record Details
-  - ![screenshot](documentation/wf-details-mobile.png)
+- **Record Details**
+  ![Record Details Mobile Wireframe](documentation/wf-details-mobile.png)
 
-Bag
-  - ![screenshot](documentation/wf-bag-mobile.png)
+- **Bag**
+  ![Bag Mobile Wireframe](documentation/wf-bag-mobile.png)
 
-Checkout
-  - ![screenshot](documentation/wf-checkout-mobile.png)
+- **Checkout**
+  ![Checkout Mobile Wireframe](documentation/wf-checkout-mobile.png)
 
 </details>
 
@@ -202,20 +202,20 @@ Checkout
 <details>
 <summary> Click here to see the Tablet Wireframes </summary>
 
-Home
-  - ![screenshot](documentation/wf-home-tablet.png)
+- **Home**
+  ![Home Tablet Wireframe](documentation/wf-home-tablet.png)
 
-Records
-  - ![screenshot](documentation/wf-records-tablet.png)
+- **Records**
+  ![Records Tablet Wireframe](documentation/wf-records-tablet.png)
 
-Record Details
-  - ![screenshot](documentation/wf-details-tablet.png)
+- **Record Details**
+  ![Record Details Tablet Wireframe](documentation/wf-details-tablet.png)
 
-Bag
-  - ![screenshot](documentation/wf-bag-tablet.png)
+- **Bag**
+  ![Bag Tablet Wireframe](documentation/wf-bag-tablet.png)
 
-Checkout
-  - ![screenshot](documentation/wf-checkout-tablet.png)
+- **Checkout**
+  ![Checkout Tablet Wireframe](documentation/wf-checkout-tablet.png)
 
 </details>
 
@@ -224,20 +224,20 @@ Checkout
 <details>
 <summary> Click here to see the Desktop Wireframes </summary>
 
-Home
-  - ![screenshot](documentation/wf-home-desktop.png)
+- **Home**
+  ![Home Desktop Wireframe](documentation/wf-home-desktop.png)
 
-Records
-  - ![screenshot](documentation/wf-records-desktop.png)
+- **Records**
+  ![Records Desktop Wireframe](documentation/wf-records-desktop.png)
 
-Record Details
-  - ![screenshot](documentation/wf-details-desktop.png)
+- **Record Details**
+  ![Record Details Desktop Wireframe](documentation/wf-details-desktop.png)
 
-Bag
-  - ![screenshot](documentation/wf-bag-desktop.png)
+- **Bag**
+  ![Bag Desktop Wireframe](documentation/wf-bag-desktop.png)
 
-Checkout
-  - ![screenshot](documentation/wf-checkout-desktop.png)
+- **Checkout**
+  ![Checkout Desktop Wireframe](documentation/wf-checkout-desktop.png)
 
 </details>
 
@@ -255,25 +255,25 @@ Checkout
 
     - To enhance user convenience, a decision was made to implement an "Add to Bag" or "Buy Now" button that appears atop the focused record cover image. This simplifies the process, allowing users to easily click on the button and add the record to their shopping bag.
 
-[![Image from Gyazo](https://i.gyazo.com/8b2ce80740d9477eebaba52887a97f56.gif)](https://gyazo.com/8b2ce80740d9477eebaba52887a97f56)
+[![Add to Bag on Image Focus](https://i.gyazo.com/8b2ce80740d9477eebaba52887a97f56.gif)](https://gyazo.com/8b2ce80740d9477eebaba52887a97f56)
 
 - **White form fields on focus.**
 
     - In order to enhance user clarity regarding active text input areas, I opted to style all text fields with a white background and black text. This deliberate choice creates a stark contrast against the darker background with light grey text, ensuring users can easily identify where they are inputting text. 
 
-[![Image from Gyazo](https://i.gyazo.com/e84927ee8e5337ba54e5c5202e9a4510.gif)](https://gyazo.com/e84927ee8e5337ba54e5c5202e9a4510)
+[![White form fields](https://i.gyazo.com/e84927ee8e5337ba54e5c5202e9a4510.gif)](https://gyazo.com/e84927ee8e5337ba54e5c5202e9a4510)
 
 - **Vibrant Buttons with Fill on Focus**
 
     - While colorful buttons serve their purpose, they were too conspicuous against the darker aesthetic of the site. Opting for btn-outline provided the desired ambiance with a subtle grey outline, complemented by colorful text. Additionally, transitioning to a filled color button on focus provided a visually engaging interaction without compromising the overall design coherence.
 
-[![Image from Gyazo](https://i.gyazo.com/9b592e55ee2507060f26b4d310f1d420.gif)](https://gyazo.com/9b592e55ee2507060f26b4d310f1d420) [![Image from Gyazo](https://i.gyazo.com/361ff91026cc53dcbad882bc1b11d27e.gif)](https://gyazo.com/361ff91026cc53dcbad882bc1b11d27e)
+[![IVibrant Buttons](https://i.gyazo.com/9b592e55ee2507060f26b4d310f1d420.gif)](https://gyazo.com/9b592e55ee2507060f26b4d310f1d420) [![Fill on Focus](https://i.gyazo.com/361ff91026cc53dcbad882bc1b11d27e.gif)](https://gyazo.com/361ff91026cc53dcbad882bc1b11d27e)
 
 - **Dark Menus, Light Focus**
 
     - Adhering to the overarching theme, menus are designed with a dark color palette. However, to improve usability, they transition to a white background with black text upon focus. This change ensures clear visibility and contrast. Additionally, a subtle glow effect is applied behind them, enhancing their prominence against the darker backdrop.
 
-[![Image from Gyazo](https://i.gyazo.com/fa16138c2b328b5d73dd347d8af010a9.gif)](https://gyazo.com/fa16138c2b328b5d73dd347d8af010a9)
+[![Dark menus, Light focus](https://i.gyazo.com/fa16138c2b328b5d73dd347d8af010a9.gif)](https://gyazo.com/fa16138c2b328b5d73dd347d8af010a9)
 
 - **Labels for Special Offers**
 
@@ -586,7 +586,7 @@ After it finished crawling the entire site, it created a
 
 ### Robots
 
-I've created the [robots.txt](robots.txt) file at the root-level.
+I've created the [robots.txt](robots.txt).
 Inside, I've included the default settings:
 
 ```
@@ -608,9 +608,9 @@ Using more popular providers with a wider user base, such as Facebook, typically
 
 I've created mockups of Facebook, Instagram and Youtube. 
 
-![screenshot](documentation/FacebookMock.png)
-![screenshot](documentation/YouTubeMock.png)
-![screenshot](documentation/InstagramMock.png)
+![Facebook](documentation/FacebookMock.png)
+![Youtube](documentation/YouTubeMock.png)
+![Instagram](documentation/InstagramMock.png)
 
 ### Newsletter Marketing
 
