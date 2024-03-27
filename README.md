@@ -174,7 +174,7 @@ Arrow - Top line and marker for messages top right, under bag/cart.
 
 
 ## Wireframes
-DONT FORGET! 
+
 ### Mobile Wireframes
 
 <details>
