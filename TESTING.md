@@ -163,8 +163,10 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | | Clicking on the "View Bag" button should take me to the bag page | Click "View Bag" after adding items | Redirects to the bag page with items listed | Test concluded and passed | [![View Bag](https://i.gyazo.com/8df8a17706039980f55d01b3abf5984f.gif)](https://gyazo.com/8df8a17706039980f55d01b3abf5984f) |
 | | Updating the quantity of an item in the bag should reflect the correct total price | Change quantity and click "Update" | Total price updates accordingly | Test concluded and passed | [![Update Quantity](https://i.gyazo.com/9249065dadf2bf6e1274bc4e208ad4e7.gif)](https://gyazo.com/9249065dadf2bf6e1274bc4e208ad4e7) |
 | | Removing an item from the bag should remove it from the list and update the total price | Click "Remove" on an item | Item is removed and total price updates | Test concluded and passed | [![Remove Item](https://i.gyazo.com/c4f3bb3c790f158d4c9be7f574ce88b2.gif)](https://gyazo.com/c4f3bb3c790f158d4c9be7f574ce88b2) |
+| | Order verification on Order | There should be a verification of the order on screen | | Test concluded and passed | ![Order verification](documentation/testing/order-verification.png) |
 | Edit | | | | | |
 | | Editing a record's details should update the record with the new information | Modify details and save | Record is updated with new details | Test concluded and passed | [![Edit Record](https://i.gyazo.com/2b902c73629acd6108191b34ed5b18d1.gif)](https://gyazo.com/2b902c73629acd6108191b34ed5b18d1) |
+| | Trying to reach any edit functinality, even trhough URL you need to be signed in  | User should be redirected to login | Tried entering edit URL | Test concluded and passed | ![CRUD Redirect](documentation/testing/reach-edit-signin.png) |
 | Add | | | | | |
 | | Adding a new record should list it in the records page | Fill in details and save | New record appears in the list | Test concluded and passed | [![Add Record](https://i.gyazo.com/27fb0844a87fd705ad89b245ff7f10a4.gif)](https://gyazo.com/27fb0844a87fd705ad89b245ff7f10a4) |
 | | Required fields must be filled to successfully add a record | Attempt to save with missing required fields | Error messages for missing fields displayed | Test concluded and passed | [![Required Fields](https://i.gyazo.com/f713134681b63c60c567ef6a6bb61eee.gif)](https://gyazo.com/f713134681b63c60c567ef6a6bb61eee) |
@@ -180,6 +182,8 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Newsletter | | | | | |
 | | Subscribing to the newsletter should confirm my subscription | Enter email and click subscribe | Confirmation message displayed | Test concluded and passed | [![subscribe](https://i.gyazo.com/00277502abb36b51b2aa4e5e30abb0a1.gif)](https://gyazo.com/00277502abb36b51b2aa4e5e30abb0a1) |
 | | Attempting to subscribe with an already subscribed email should display an error message | Use an email already subscribed and submit | Error message displayed, indicating already subscribed | Test concluded and passed | ![Subscribe error](documentation/testing/newsletter-error.png) |
+| | A letter should be sent | Look at the console | Message is displayed | Test concluded and passed | ![Newsletter Console](documentation/testing/newletter-console.png) |
+| | Letter in mailbox | There should be a letter in my mailbox | Test concluded and passed | ![Newsletter Console](documentation/testing/newsletter-.welcome.png) |
 
 
 ## User Story Testing
