@@ -42,13 +42,13 @@ Overall, creating a webshop for rare and classic Psytrance and Techno on vinyl c
 
 ![UX Home](documentation/testing/responsive/home-desktop-medium.png)
 
-In crafting our website's aesthetic, we aimed to encapsulate the essence of the music scene it represents: dark, gritty, and atmospheric. While Techno is often associated with a monotonous, gray mood, we saw an opportunity to inject vibrancy and energy into the design.
+In crafting our website's aesthetic, I aimed to encapsulate the essence of the music scene it represents: dark, gritty, and atmospheric. While Techno is often associated with a monotonous, gray mood, I saw an opportunity to inject vibrancy and energy into the design.
 
 Our mission was to make the album covers pop against the dark backdrop of the site, radiating vividness and vitality. By adding a subtle glow behind them, we enhanced their visual impact, turning them into captivating focal points that draw the eye.
 
 ![UX Records](documentation/testing/responsive/records-desktop-medium.png)
 
-Essentially, we wanted our records to stand out as beacons of color and excitement amidst a sea of darkness. By infusing dashes of vibrant hues into the design, we aimed to create a dynamic and engaging visual experience that mirrors the energy of the music itself.
+Essentially, I wanted our records to stand out as beacons of color and excitement amidst a sea of darkness. By infusing dashes of vibrant hues into the design, I aimed to create a dynamic and engaging visual experience that mirrors the energy of the music itself.
 
 And it's not just about Techno – we also paid homage to the shadowy allure of Psytrance. We balanced its dark undertones with bursts of psychedelic colors, capturing the genre's dynamic contrasts and enigmatic appeal.
 
@@ -119,7 +119,7 @@ Arrow - Top line and marker for messages top right, under bag/cart.
 
 #### Modern and Clean Aesthetic:
 
-- Lato's clean lines and geometric shapes contribute to a modern and minimalist feel, which perfectly complements the dark background. This combination avoids a cluttered look and emphasizes your content.
+- Lato's clean lines and geometric shapes contribute to a modern and minimalist feel, which perfectly complements the dark background. This combination avoids a cluttered look and emphasizes our content.
 
 #### Readability on Dark Backgrounds:
 
