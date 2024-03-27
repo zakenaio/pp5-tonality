@@ -11,17 +11,17 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| about | about.html | ![screenshot](documentation/testing/html-about.png) | |
-| bag | bag.html | ![screenshot](documentation/testing/html-bag.png) | |
-| checkout | checkout.html | ![screenshot](documentation/testing/html-checkout.png) | |
-| checkout | checkout_success.html | ![screenshot](documentation/testing/html-checkout_success.png) | |
-| home | index.html | ![screenshot](documentation/testing/html-home.png) | |
-| profiles | profile.html | ![screenshot](documentation/testing/html-profile.png) | |
-| records | add_record.html | ![screenshot](documentation/testing/html-add_record.png) | |
-| records | edit_record.html | ![screenshot](documentation/testing/html-edit.png) | |
-| records | record_detail.html | ![screenshot](documentation/testing/html-details.png) | |
-| records | records.html | ![screenshot](documentation/testing/html-records.png) | |
-| templates | 404.html | ![screenshot](documentation/testing/html-404.png) | |
+| about | about.html | ![About HTML Validation](documentation/testing/html-about.png) | |
+| bag | bag.html | ![Bag HTML Validation](documentation/testing/html-bag.png) | |
+| checkout | checkout.html | ![Checkout HTML Validation](documentation/testing/html-checkout.png) | |
+| checkout | checkout_success.html | ![Checkout Success HTML Validation](documentation/testing/html-checkout_success.png) | |
+| home | index.html | ![Home HTML Validation](documentation/testing/html-home.png) | |
+| profiles | profile.html | ![Profile HTML Validation](documentation/testing/html-profile.png) | |
+| records | add_record.html | ![Add Record HTML Validation](documentation/testing/html-add_record.png) | |
+| records | edit_record.html | ![Edit Record HTML Validation](documentation/testing/html-edit.png) | |
+| records | record_detail.html | ![Record Detail HTML Validation](documentation/testing/html-details.png) | |
+| records | records.html | ![Records HTML Validation](documentation/testing/html-records.png) | |
+| templates | 404.html | ![404 HTML Validation](documentation/testing/html-404.png) | |
 
 ### CSS
 
@@ -29,9 +29,9 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| checkout | checkout.css | ![screenshot](documentation/testing/css-checkout.png) | |
-| profiles | profile.css | ![screenshot](documentation/testing/css-profiles.png) | |
-| static | base.css | ![screenshot](documentation/testing/css-home.png) | |
+| checkout | checkout.css | ![Checkout CSS Validation](documentation/testing/css-checkout.png) | |
+| profiles | profile.css | ![Profile CSS Validation](documentation/testing/css-profiles.png) | |
+| static | base.css | ![Base CSS Validation](documentation/testing/css-home.png) | |
 
 ### JavaScript
 
@@ -39,8 +39,9 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
-| checkout | stripe_elements.js | ![screenshot](documentation/testing/validation/js-stripe.png) | |
-| profiles | countryfield.js | ![screenshot](documentation/testing/validation/js-countryfield.png) | |
+| checkout | stripe_elements.js | ![Stripe Elements JS Validation](documentation/testing/validation/js-stripe.png) | |
+| profiles | countryfield.js | ![Countryfield JS Validation](documentation/testing/validation/js-countryfield.png) | |
+
 
 ### Python
 
@@ -98,12 +99,13 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
 | Browser | Home | About | Contact | Records | Details | Bag | Checkout  | Edit | Add | Sign in | Faq |
+| Browser | Home | About | Contact | Records | Details | Bag | Checkout | Edit | Add | Sign in | Faq |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Brave Win 11 | ![screenshot](documentation/testing/responsive/home-brave-win11.png) | ![screenshot](documentation/testing/responsive/about-brave-win11.png) | ![screenshot](documentation/testing/responsive/contact-brave-win11.png) | ![screenshot](documentation/testing/responsive/records-brave-win11.png) | ![screenshot](documentation/testing/responsive/detail-brave-win11.png) | ![screenshot](documentation/testing/responsive/bag-brave-win11.png) | ![screenshot](documentation/testing/responsive/checkout-brave-win11.png) | ![screenshot](documentation/testing/responsive/edit-brave-win11.png) | ![screenshot](documentation/testing/responsive/add-brave-win11.png) | ![screenshot](documentation/testing/responsive/signin-brave-win11.png) | ![screenshot](documentation/testing/responsive/faq-brave-win11.png) |
-| Edge Win 11 | ![screenshot](documentation/testing/responsive/home-edge-win11.png) | ![screenshot](documentation/testing/responsive/about-edge-win11.png) | ![screenshot](documentation/testing/responsive/contact-edge-win11.png) | ![screenshot](documentation/testing/responsive/records-edge-win11.png) | ![screenshot](documentation/testing/responsive/detail-edge-win11.png) | ![screenshot](documentation/testing/responsive/bag-edge-win11.png) | ![screenshot](documentation/testing/responsive/checkout-edge-win11.png) | ![screenshot](documentation/testing/responsive/edit-edge-win11.png) | ![screenshot](documentation/testing/responsive/add-edge-win11.png) | ![screenshot](documentation/testing/responsive/signin-edge-win11.png) | ![screenshot](documentation/testing/responsive/faq-edge-win11.png) |
-| Safari Mac | ![screenshot](documentation/testing/responsive/home-safari-mac.png) | ![screenshot](documentation/testing/responsive/about-safari-mac.png) | ![screenshot](documentation/testing/responsive/contact-safari-mac.png) | ![screenshot](documentation/testing/responsive/records-safari-mac.png) | ![screenshot](documentation/testing/responsive/detail-safari-mac.png) | ![screenshot](documentation/testing/responsive/bag-safari-mac.png) | ![screenshot](documentation/testing/responsive/checkout-safari-mac.png) | ![screenshot](documentation/testing/responsive/edit-safari-mac.png) | ![screenshot](documentation/testing/responsive/add-safari-mac.png) | ![screenshot](documentation/testing/responsive/signin-safari-mac.png) | ![screenshot](documentation/testing/responsive/faq-safari-mac.png) |
-| Firefox Mac | ![screenshot](documentation/testing/responsive/home-firefox-mac.png) | ![screenshot](documentation/testing/responsive/about-firefox-mac.png) | ![screenshot](documentation/testing/responsive/contact-firefox-mac.png) | ![screenshot](documentation/testing/responsive/records-firefox-mac.png) | ![screenshot](documentation/testing/responsive/detail-firefox-mac.png) | ![screenshot](documentation/testing/responsive/bag-firefox-mac.png) | ![screenshot](documentation/testing/responsive/checkout-firefox-mac.png) | ![screenshot](documentation/testing/responsive/edit-firefox-mac.png) | ![screenshot](documentation/testing/responsive/add-firefox-mac.png) | ![screenshot](documentation/testing/responsive/signin-firefox-mac.png) | ![screenshot](documentation/testing/responsive/faq-firefox-mac.png) |
-| Firefox Linux | ![screenshot](documentation/testing/responsive/home-firefox-linux.png) | ![screenshot](documentation/testing/responsive/about-firefox-linux.png) | ![screenshot](documentation/testing/responsive/contact-firefox-linux.png) | ![screenshot](documentation/testing/responsive/records-firefox-linux.png) | ![screenshot](documentation/testing/responsive/detail-firefox-linux.png) | ![screenshot](documentation/testing/responsive/bag-firefox-linux.png) | ![screenshot](documentation/testing/responsive/checkout-firefox-linux.png) | ![screenshot](documentation/testing/responsive/edit-firefox-linux.png) | ![screenshot](documentation/testing/responsive/add-firefox-linux.png) | ![screenshot](documentation/testing/responsive/signin-firefox-linux.png) | ![screenshot](documentation/testing/responsive/faq-firefox-linux.png) |
+| Brave Win 11 | ![Home Brave Win 11](documentation/testing/responsive/home-brave-win11.png) | ![About Brave Win 11](documentation/testing/responsive/about-brave-win11.png) | ![Contact Brave Win 11](documentation/testing/responsive/contact-brave-win11.png) | ![Records Brave Win 11](documentation/testing/responsive/records-brave-win11.png) | ![Details Brave Win 11](documentation/testing/responsive/detail-brave-win11.png) | ![Bag Brave Win 11](documentation/testing/responsive/bag-brave-win11.png) | ![Checkout Brave Win 11](documentation/testing/responsive/checkout-brave-win11.png) | ![Edit Brave Win 11](documentation/testing/responsive/edit-brave-win11.png) | ![Add Brave Win 11](documentation/testing/responsive/add-brave-win11.png) | ![Sign in Brave Win 11](documentation/testing/responsive/signin-brave-win11.png) | ![Faq Brave Win 11](documentation/testing/responsive/faq-brave-win11.png) |
+| Edge Win 11 | ![Home Edge Win 11](documentation/testing/responsive/home-edge-win11.png) | ![About Edge Win 11](documentation/testing/responsive/about-edge-win11.png) | ![Contact Edge Win 11](documentation/testing/responsive/contact-edge-win11.png) | ![Records Edge Win 11](documentation/testing/responsive/records-edge-win11.png) | ![Details Edge Win 11](documentation/testing/responsive/detail-edge-win11.png) | ![Bag Edge Win 11](documentation/testing/responsive/bag-edge-win11.png) | ![Checkout Edge Win 11](documentation/testing/responsive/checkout-edge-win11.png) | ![Edit Edge Win 11](documentation/testing/responsive/edit-edge-win11.png) | ![Add Edge Win 11](documentation/testing/responsive/add-edge-win11.png) | ![Sign in Edge Win 11](documentation/testing/responsive/signin-edge-win11.png) | ![Faq Edge Win 11](documentation/testing/responsive/faq-edge-win11.png) |
+| Safari Mac | ![Home Safari Mac](documentation/testing/responsive/home-safari-mac.png) | ![About Safari Mac](documentation/testing/responsive/about-safari-mac.png) | ![Contact Safari Mac](documentation/testing/responsive/contact-safari-mac.png) | ![Records Safari Mac](documentation/testing/responsive/records-safari-mac.png) | ![Details Safari Mac](documentation/testing/responsive/detail-safari-mac.png) | ![Bag Safari Mac](documentation/testing/responsive/bag-safari-mac.png) | ![Checkout Safari Mac](documentation/testing/responsive/checkout-safari-mac.png) | ![Edit Safari Mac](documentation/testing/responsive/edit-safari-mac.png) | ![Add Safari Mac](documentation/testing/responsive/add-safari-mac.png) | ![Sign in Safari Mac](documentation/testing/responsive/signin-safari-mac.png) | ![Faq Safari Mac](documentation/testing/responsive/faq-safari-mac.png) |
+| Firefox Mac | ![Home Firefox Mac](documentation/testing/responsive/home-firefox-mac.png) | ![About Firefox Mac](documentation/testing/responsive/about-firefox-mac.png) | ![Contact Firefox Mac](documentation/testing/responsive/contact-firefox-mac.png) | ![Records Firefox Mac](documentation/testing/responsive/records-firefox-mac.png) | ![Details Firefox Mac](documentation/testing/responsive/detail-firefox-mac.png) | ![Bag Firefox Mac](documentation/testing/responsive/bag-firefox-mac.png) | ![Checkout Firefox Mac](documentation/testing/responsive/checkout-firefox-mac.png) | ![Edit Firefox Mac](documentation/testing/responsive/edit-firefox-mac.png) | ![Add Firefox Mac](documentation/testing/responsive/add-firefox-mac.png) | ![Sign in Firefox Mac](documentation/testing/responsive/signin-firefox-mac.png) | ![Faq Firefox Mac](documentation/testing/responsive/faq-firefox-mac.png) |
+| Firefox Linux | ![Home Firefox Linux](documentation/testing/responsive/home-firefox-linux.png) | ![About Firefox Linux](documentation/testing/responsive/about-firefox-linux.png) | ![Contact Firefox Linux](documentation/testing/responsive/contact-firefox-linux.png) | ![Records Firefox Linux](documentation/testing/responsive/records-firefox-linux.png) | ![Details Firefox Linux](documentation/testing/responsive/detail-firefox-linux.png) | ![Bag Firefox Linux](documentation/testing/responsive/bag-firefox-linux.png) | ![Checkout Firefox Linux](documentation/testing/responsive/checkout-firefox-linux.png) | ![Edit Firefox Linux](documentation/testing/responsive/edit-firefox-linux.png) | ![Add Firefox Linux](documentation/testing/responsive/add-firefox-linux.png) | ![Sign in Firefox Linux](documentation/testing/responsive/signin-firefox-linux.png) | ![Faq Firefox Linux](documentation/testing/responsive/faq-firefox-linux.png) |
 
 ## Responsiveness
 
