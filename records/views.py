@@ -33,11 +33,11 @@ def all_records(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            records = records.distinct('id').order_by(sortkey)
+            records = records.order_by(sortkey)
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
-            records = records.distinct('id').filter(category__name__in=categories)
+            records = records.filter(category__name__in=categories)
 
         if 'q' in request.GET:
             query = request.GET['q'].strip().lower()
@@ -47,7 +47,11 @@ def all_records(request):
                     )
                 return redirect(reverse('records'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(category__name__icontains=query)
+            queries = (
+                Q(name__icontains=query) |
+                Q(description__icontains=query) |
+                Q(category__name__icontains=query)
+            )
             records = records.filter(queries).distinct()
 
     current_sorting = f'{sort}_{direction}'
