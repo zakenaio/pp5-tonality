@@ -33,11 +33,11 @@ def all_records(request):
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            records = records.order_by(sortkey)
+            records = records.order_by(sortkey).distinct()
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
-            records = records.filter(category__name__in=categories)
+            records = records.filter(category__name__in=categories).distinct()
 
         if 'q' in request.GET:
             query = request.GET['q'].strip().lower()
