@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Records, Category  # Corrected import
+from .models import Records, Category
 
 
 class RecordsAdmin(admin.ModelAdmin):
@@ -16,7 +16,10 @@ class RecordsAdmin(admin.ModelAdmin):
     ordering = ('sku',)
 
     def display_categories(self, obj):
-        """Create a string for the Category. This is required to display ManyToManyField in list_display."""
+        """
+        Create a string for the Category.
+        This is required to display ManyToManyField in list_display.
+        """
         return ', '.join([category.name for category in obj.category.all()])
     display_categories.short_description = 'Categories'
 

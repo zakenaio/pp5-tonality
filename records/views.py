@@ -25,8 +25,6 @@ def all_records(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 records = records.annotate(lower_name=Lower('name'))
-            if sortkey == 'category':
-                sortkey = 'category__name'
             if sortkey == 'release':
                 sortkey = 'releasedate'
             if 'direction' in request.GET:

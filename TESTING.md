@@ -98,7 +98,6 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Browser | Home | About | Contact | Records | Details | Bag | Checkout  | Edit | Add | Sign in | Faq |
 | Browser | Home | About | Contact | Records | Details | Bag | Checkout | Edit | Add | Sign in | Faq |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Brave Win 11 | ![Home Brave Win 11](documentation/testing/responsive/home-brave-win11.png) | ![About Brave Win 11](documentation/testing/responsive/about-brave-win11.png) | ![Contact Brave Win 11](documentation/testing/responsive/contact-brave-win11.png) | ![Records Brave Win 11](documentation/testing/responsive/records-brave-win11.png) | ![Details Brave Win 11](documentation/testing/responsive/detail-brave-win11.png) | ![Bag Brave Win 11](documentation/testing/responsive/bag-brave-win11.png) | ![Checkout Brave Win 11](documentation/testing/responsive/checkout-brave-win11.png) | ![Edit Brave Win 11](documentation/testing/responsive/edit-brave-win11.png) | ![Add Brave Win 11](documentation/testing/responsive/add-brave-win11.png) | ![Sign in Brave Win 11](documentation/testing/responsive/signin-brave-win11.png) | ![Faq Brave Win 11](documentation/testing/responsive/faq-brave-win11.png) |

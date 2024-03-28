@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.core.mail import send_mail
@@ -73,9 +75,9 @@ def checkout(request):
 
                 except Records.DoesNotExist:
                     messages.error(request, (
-                        "One of the records in your bag wasn't found in our database. "
-                        "Please call us for assistance!")
-                    )
+                        "One of the records in your bag wasn't found in "
+                        "our database.Please call us for assistance!"
+                        ))
                     order.delete()
                     return redirect(reverse('view_bag'))
 

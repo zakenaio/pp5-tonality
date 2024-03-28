@@ -39,4 +39,4 @@ class Records(models.Model):
         default=False, verbose_name="Is Clearance")
 
     def __str__(self):
-        return self.nam
+        return self.name
